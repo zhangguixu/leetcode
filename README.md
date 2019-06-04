@@ -8,6 +8,7 @@
 ## leetcode刷题记录
 
 [twosum](https://leetcode.com/problems/two-sum/) 难度： easy，考察点：array hashtable
+[maximum-depth-of-binary-tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
 
 
 ## 参考资料
