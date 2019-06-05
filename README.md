@@ -10,6 +10,7 @@
 - [two sum](https://leetcode.com/problems/two-sum/) 难度： easy，考察点：array hashtable
 - [maximum depth of binary tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) 难度： easy，考察点：递归思想
 - [single number](https://leetcode.com/problems/single-number/) 难度：easy，考察点：位运算 异或
+- [reverse linked list](https://leetcode.com/problems/reverse-linked-list/) 难度：easy，考察点：链表的基础操作
 
 
 ## 参考资料
