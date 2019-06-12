@@ -2,8 +2,9 @@
 
 ## 基础数据结构
 
-- [队列](./queue.go)
-- [栈](./stack.go)
+- [队列](./datastructure/queue.go)
+- [栈](./datastructure/stack.go)
+- [二叉树](./datastructure/binary-tree.go)
 
 ## leetcode刷题记录
 
@@ -12,6 +13,7 @@
 - [single number](https://leetcode.com/problems/single-number/) 难度：easy，考察点：位运算 异或
 - [reverse linked list](https://leetcode.com/problems/reverse-linked-list/) 难度：easy，考察点：链表的基础操作
 - [majority element](https://leetcode.com/problems/majority-element/) 难度: easy，考察点：众数
+- [Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/) 难度： easy，
 
 
 ## 参考资料
