@@ -6,6 +6,12 @@
 - [栈](./datastructure/stack.go)
 - [二叉树](./datastructure/binary-tree.go)
 
+## 排序
+
+- [冒泡排序](./commonsort/bubble-sort.go)
+- [选择排序](./commonsort/selection-sort.go)
+- [归并排序](./commonsort/merge-sort.go)
+
 ## leetcode刷题记录
 
 - [two sum](https://leetcode.com/problems/two-sum/) 难度： easy，考察点：array hashtable
@@ -22,3 +28,5 @@
 - [top interview questions](https://leetcode.com/problemset/top-interview-questions/)
 - [数据结构与算法-gitbook](https://algorithm.yuanbin.me/zh-hans/)
 - [位操作的基础运用](https://blog.csdn.net/morewindows/article/details/7354571)
+- [树结构学习](https://www.cnblogs.com/skywang12345/p/3576328.html)
+- [十大经典排序算法动画与解析](https://mp.weixin.qq.com/s/vn3KiV-ez79FmbZ36SX9lg)
