@@ -15,16 +15,24 @@
 
 ## leetcode刷题记录
 
-- [two sum](https://leetcode.com/problems/two-sum/) 难度： easy，考察点：array hashtable
 - [maximum depth of binary tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) 难度： easy，考察点：递归思想
-- [single number](https://leetcode.com/problems/single-number/) 难度：easy，考察点：位运算 异或
 - [reverse linked list](https://leetcode.com/problems/reverse-linked-list/) 难度：easy，考察点：链表的基础操作
 - [majority element](https://leetcode.com/problems/majority-element/) 难度: easy，考察点：众数
 - [Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/) 难度： easy，todo
-- [Move Zeroes](https://leetcode.com/problems/move-zeroes/) 难度：easy
 - [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/)
 - [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) 难度: easy
 - [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) 难度：easy，考察点：stack
+
+## leetcode初级入门专题训练
+
+[初级入门专题练习](https://leetcode.com/explore/featured/card/top-interview-questions-easy/)
+
+### Array
+
+- [Rotate Array](https://leetcode.com/explore/featured/card/top-interview-questions-easy/92/array/646/)
+- [Move Zeroes](https://leetcode.com/problems/move-zeroes/) 难度：easy
+- [single number](https://leetcode.com/problems/single-number/) 难度：easy，考察点：位运算 异或
+- [two sum](https://leetcode.com/problems/two-sum/) 难度： easy，考察点：array hash table
 
 ## 参考资料
 
