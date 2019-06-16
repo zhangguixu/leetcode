@@ -23,7 +23,8 @@
 - [Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/) 难度： easy，todo
 - [Move Zeroes](https://leetcode.com/problems/move-zeroes/) 难度：easy
 - [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/)
-- [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)
+- [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) 难度: easy
+- [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) 难度：easy，考察点：stack
 
 ## 参考资料
 
