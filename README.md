@@ -34,6 +34,10 @@
 - [single number](https://leetcode.com/problems/single-number/) 难度：easy，考察点：位运算 异或
 - [two sum](https://leetcode.com/problems/two-sum/) 难度： easy，考察点：array hash table
 
+### Strings
+
+- [Reverse String](https://leetcode.com/explore/featured/card/top-interview-questions-easy/127/strings/879/)
+
 ## 参考资料
 
 - [leetcode刷题记录](https://github.com/azl397985856/leetcode)
