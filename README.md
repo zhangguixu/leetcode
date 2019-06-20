@@ -19,7 +19,6 @@
 - [reverse linked list](https://leetcode.com/problems/reverse-linked-list/) 难度：easy，考察点：链表的基础操作
 - [majority element](https://leetcode.com/problems/majority-element/) 难度: easy，考察点：众数
 - [Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/) 难度： easy，todo
-- [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/)
 - [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) 难度: easy
 - [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) 难度：easy，考察点：stack
 
@@ -37,6 +36,7 @@
 ### Strings
 
 - [Reverse String](https://leetcode.com/explore/featured/card/top-interview-questions-easy/127/strings/879/)
+- [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/)
 
 ## 参考资料
 
