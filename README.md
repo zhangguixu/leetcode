@@ -48,3 +48,5 @@
 - [树结构学习](https://www.cnblogs.com/skywang12345/p/3576328.html)
 - [十大经典排序算法动画与解析](https://mp.weixin.qq.com/s/vn3KiV-ez79FmbZ36SX9lg)
 - [知乎：常见排序算法总结](https://zhuanlan.zhihu.com/p/40695917)
+- [字符串匹配的KMP算法](http://www.ruanyifeng.com/blog/2013/05/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm.html)
+- [从头到尾彻底理解KMP](https://blog.csdn.net/v_july_v/article/details/7041827)
