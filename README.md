@@ -33,6 +33,7 @@
 - [single number](https://leetcode.com/problems/single-number/) 难度：easy，考察点：位运算 异或
 - [two sum](https://leetcode.com/problems/two-sum/) 难度： easy，考察点：array hash table
 - [Remove Duplicates from Sorted Array](https://leetcode.com/explore/featured/card/top-interview-questions-easy/92/array/727/) 跟Move Zeroes的思路差不多
+- [Best Time to Buy and Sell Stock II](https://leetcode.com/explore/featured/card/top-interview-questions-easy/92/array/564/)
 
 ### Strings
 
