@@ -4,7 +4,6 @@ import (
 	"fmt"
 )
 
-
 func main() {
 	fmt.Println(twoSum([]int{3, 2, 4}, 6))
 	fmt.Println(twoSum([]int{3, 3, 3}, 6))
@@ -13,7 +12,7 @@ func main() {
 func twoSum(nums []int, target int) []int {
 	res := make([]int, 0, 2)
 	tmpMap := make(map[int][]int, len(nums))
-    for index,n := range nums {
+	for index, n := range nums {
 		list := tmpMap[n]
 		if list == nil {
 			list = make([]int, 0)
@@ -21,7 +20,7 @@ func twoSum(nums []int, target int) []int {
 		list = append(list, index)
 		tmpMap[n] = list
 	}
-	for index,n := range nums {
+	for index, n := range nums {
 		left := target - n
 		if tmpMap[left] != nil {
 			if left == n && len(tmpMap[left]) == 1 {
@@ -34,9 +33,8 @@ func twoSum(nums []int, target int) []int {
 				res = append(res, index)
 				res = append(res, list[0])
 			}
-			break;
+			break
 		}
 	}
-    return res
+	return res
 }
-

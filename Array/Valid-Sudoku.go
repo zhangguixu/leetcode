@@ -51,7 +51,7 @@ func main() {
 func isValidSudoku(board [][]byte) bool {
 	var numOfrow int
 	numOfrow = len(board)
-	if numOfrow % 9 != 0 {
+	if numOfrow%9 != 0 {
 		return false
 	}
 	valid := true
@@ -99,7 +99,7 @@ func isValidSudoku(board [][]byte) bool {
 			columnMap[board[j][i]] = 1
 		}
 	}
-	
+
 	if !valid {
 		return false
 	}
@@ -120,15 +120,15 @@ func isValidSudoku(board [][]byte) bool {
 					break
 				}
 				for l := 0; l < 3; l++ {
-					if board[i + l][j + k] == 46 {
+					if board[i+l][j+k] == 46 {
 						continue
 					}
-					_, ok := boardMap[board[i + l][j + k]]
+					_, ok := boardMap[board[i+l][j+k]]
 					if ok {
 						valid = false
 						break
 					}
-					boardMap[board[i + l][j + k]] = 1
+					boardMap[board[i+l][j+k]] = 1
 				}
 			}
 		}
@@ -140,7 +140,7 @@ func isValidSudoku(board [][]byte) bool {
 // height := len(board)
 // if height % 9 != 0 {
 // 	return false
-// } 
+// }
 // valid := true
 // for i := 0; i < height; i++ {
 // 	if valid == false {
