@@ -37,6 +37,10 @@
 - [Valid Sudoku](https://leetcode.com/explore/featured/card/top-interview-questions-easy/92/array/769/)
 - [Plus one](https://leetcode.com/explore/featured/card/top-interview-questions-easy/92/array/559/)
 
+### Linked List
+
+- [Merge Two Sorted Lists](pp.zeplin.io/project/57fb20c221b944872f9deb8e/screen/5d01fbf104ff975d38c1e1f5)
+
 ### Strings
 
 - [Reverse String](https://leetcode.com/explore/featured/card/top-interview-questions-easy/127/strings/879/)
