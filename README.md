@@ -39,7 +39,8 @@
 
 ### Linked List
 
-- [Merge Two Sorted Lists](pp.zeplin.io/project/57fb20c221b944872f9deb8e/screen/5d01fbf104ff975d38c1e1f5)
+- [Merge Two Sorted Lists](https://leetcode.com/explore/featured/card/top-interview-questions-easy/93/linked-list/771/)
+- [Palindrome Linked List](https://leetcode.com/explore/featured/card/top-interview-questions-easy/93/linked-list/772/)
 
 ### Strings
 
