@@ -49,6 +49,10 @@
 - [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/)
 - [String to Integer](https://leetcode.com/explore/featured/card/top-interview-questions-easy/127/strings/884/)
 
+### Tree
+
+- [Binary Tree Level Order Traversal](https://leetcode.com/explore/featured/card/top-interview-questions-easy/94/trees/628/)
+
 ## 参考资料
 
 - [leetcode刷题记录](https://github.com/azl397985856/leetcode)
