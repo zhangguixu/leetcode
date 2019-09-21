@@ -36,6 +36,7 @@
 - [Best Time to Buy and Sell Stock II](https://leetcode.com/explore/featured/card/top-interview-questions-easy/92/array/564/)
 - [Valid Sudoku](https://leetcode.com/explore/featured/card/top-interview-questions-easy/92/array/769/)
 - [Plus one](https://leetcode.com/explore/featured/card/top-interview-questions-easy/92/array/559/)
+- [Contains Duplicate](https://leetcode.com/explore/featured/card/top-interview-questions-easy/92/array/578/)
 
 ### Linked List
 
