@@ -37,6 +37,7 @@
 - [Valid Sudoku](https://leetcode.com/explore/featured/card/top-interview-questions-easy/92/array/769/)
 - [Plus one](https://leetcode.com/explore/featured/card/top-interview-questions-easy/92/array/559/)
 - [Contains Duplicate](https://leetcode.com/explore/featured/card/top-interview-questions-easy/92/array/578/)
+- [Intersection of Two Arrays II](https://leetcode.com/explore/featured/card/top-interview-questions-easy/92/array/674/)
 
 ### Linked List
 

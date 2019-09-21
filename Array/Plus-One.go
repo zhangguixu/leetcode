@@ -37,6 +37,6 @@ func plusOne(digits []int) []int {
 		tmpList = append(tmpList, digits...)
 		digits = tmpList
 	}
-	
+
 	return digits
 }
