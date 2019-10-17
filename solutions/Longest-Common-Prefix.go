@@ -7,9 +7,9 @@ import (
 )
 
 func main() {
-	fmt.Println(longestCommonPrefix([]string{"flower","flow","flight"}))
-	fmt.Println(longestCommonPrefix([]string{"dog","racecar","car"}))
-	fmt.Println(longestCommonPrefix([]string{"testsss","test","testaas"}))
+	fmt.Println(longestCommonPrefix([]string{"flower", "flow", "flight"}))
+	fmt.Println(longestCommonPrefix([]string{"dog", "racecar", "car"}))
+	fmt.Println(longestCommonPrefix([]string{"testsss", "test", "testaas"}))
 }
 
 func longestCommonPrefix(strs []string) string {
@@ -51,5 +51,5 @@ func longestCommonPrefix(strs []string) string {
 	}
 
 	return commonPrefix
-	
+
 }

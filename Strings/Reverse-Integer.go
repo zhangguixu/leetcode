@@ -11,36 +11,36 @@ func main() {
 }
 
 func reverse(x int) int {
-		max := int(math.Pow(2, 31)) - 1
-		min := int(-math.Pow(2, 31))
-		hasMinus := false
+	max := int(math.Pow(2, 31)) - 1
+	min := int(-math.Pow(2, 31))
+	hasMinus := false
 
-		if x < 0 {
-			hasMinus = true
-			x = -x
-		}
+	if x < 0 {
+		hasMinus = true
+		x = -x
+	}
 
-		num := make([]int, 0, 10)
+	num := make([]int, 0, 10)
 
-		for x > 0 {
-			num = append(num, x % 10)
-			x = x / 10
-		}
+	for x > 0 {
+		num = append(num, x%10)
+		x = x / 10
+	}
 
-		digits := len(num)
+	digits := len(num)
+	x = 0
+
+	for i := 0; i < digits; i++ {
+		x += num[i] * int(math.Pow10(digits-i-1))
+	}
+
+	if hasMinus {
+		x = -x
+	}
+
+	if x < min || x > max {
 		x = 0
+	}
 
-		for i := 0; i < digits; i++ {
-			x += num[i] * int(math.Pow10(digits - i - 1))
-		}
-
-		if hasMinus {
-			x = -x
-		}
-
-		if x < min || x > max {
-			x = 0
-		}
-
-		return x
+	return x
 }

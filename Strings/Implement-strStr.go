@@ -12,7 +12,7 @@ func main() {
 
 // API
 func strStr_1(haystack string, needle string) int {
-    return strings.Index(haystack, needle)
+	return strings.Index(haystack, needle)
 }
 
 /*
@@ -62,14 +62,14 @@ func strStr_2(haystack string, needle string) int {
 func strStr(haystack string, needle string) int {
 	cache := make(map[int]int, 0) // 字符串的长度: 对应的部分匹配值+1，这里和默认值0区分开来，0需要走一次计算 1表示已经计算过了，但是匹配值是0
 
-	computePartialMatch := func (s string) int {
+	computePartialMatch := func(s string) int {
 		if len(s) == 1 {
 			return 0
 		}
 		if cache[len(s)] > 0 {
 			return cache[len(s)] - 1
 		}
-	
+
 	}
 
 	i := 0
@@ -90,8 +90,3 @@ func strStr(haystack string, needle string) int {
 
 	return i - j
 }
-
-
-
-
-

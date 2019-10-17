@@ -66,7 +66,7 @@ func isPalindrome(s string) bool {
 		if start >= tail {
 			break
 		}
-		if s[start] == s[tail] || (s[start] >= 'A' && s[tail] >= 'A' && (s[start] - s[tail] == 32 || s[tail] - s[start] == 32)){
+		if s[start] == s[tail] || (s[start] >= 'A' && s[tail] >= 'A' && (s[start]-s[tail] == 32 || s[tail]-s[start] == 32)) {
 			start++
 			tail--
 		} else {

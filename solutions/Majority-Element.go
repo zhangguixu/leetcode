@@ -5,9 +5,8 @@ import (
 	"sort"
 )
 
-
 func main() {
-	fmt.Println(majorityElement([]int{2,2,1,1,1,2,2}))
+	fmt.Println(majorityElement([]int{2, 2, 1, 1, 1, 2, 2}))
 }
 
 // o(n)的做法，
@@ -42,8 +41,8 @@ func main() {
  sort.Interface定义的三个方法：获取数据集合长度的Len()方法、
  比较两个元素大小的Less()方法和交换两个元素位置的Swap()方法，就可以顺利对数据集合进行排序。
  sort包会根据实际数据自动选择高效的排序算法。
- */
+*/
 func majorityElement(nums []int) int {
 	sort.Ints(nums)
-	return nums[len(nums) / 2]
+	return nums[len(nums)/2]
 }

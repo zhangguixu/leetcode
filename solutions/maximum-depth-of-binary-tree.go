@@ -3,8 +3,8 @@ package main
 import "fmt"
 
 type TreeNode struct {
-	Val int
-	Left *TreeNode
+	Val   int
+	Left  *TreeNode
 	Right *TreeNode
 }
 
@@ -16,7 +16,7 @@ func main() {
 	r.Left.Val = 9
 	r.Right = new(TreeNode)
 	r.Right.Val = 20
-	
+
 	r1 := r.Right
 	r1.Left = &TreeNode{15, nil, nil}
 	r1.Right = &TreeNode{7, nil, nil}
@@ -31,7 +31,7 @@ func maxDepth(root *TreeNode) int {
 	if root == nil {
 		return 0
 	}
-    return depth(root)
+	return depth(root)
 }
 
 func max(i int, j int) int {

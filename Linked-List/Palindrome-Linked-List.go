@@ -7,7 +7,6 @@ type ListNode struct {
 	Next *ListNode
 }
 
-
 func create(l []int) *ListNode {
 	if len(l) == 0 {
 		return nil
@@ -24,13 +23,12 @@ func create(l []int) *ListNode {
 	return header
 }
 
-
 func main() {
-	fmt.Println(isPalindrome(create([]int{1,2})))
-	fmt.Println(isPalindrome(create([]int{1,2,3})))
-	fmt.Println(isPalindrome(create([]int{1,2,3,3,2,2})))
-	fmt.Println(isPalindrome(create([]int{1,0,1})))
-	fmt.Println(isPalindrome(create([]int{1,})))
+	fmt.Println(isPalindrome(create([]int{1, 2})))
+	fmt.Println(isPalindrome(create([]int{1, 2, 3})))
+	fmt.Println(isPalindrome(create([]int{1, 2, 3, 3, 2, 2})))
+	fmt.Println(isPalindrome(create([]int{1, 0, 1})))
+	fmt.Println(isPalindrome(create([]int{1})))
 	fmt.Println(isPalindrome(create([]int{})))
 }
 

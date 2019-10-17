@@ -19,7 +19,7 @@ func BubbleSort(n []int) []int {
 
 		noNeedExchange := true
 
-		for j := 0; j < length - i; j++ {
+		for j := 0; j < length-i; j++ {
 			if n[j] > n[j+1] {
 				n[j], n[j+1] = n[j+1], n[j]
 				noNeedExchange = false

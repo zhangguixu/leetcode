@@ -24,7 +24,7 @@ package commonsort
 */
 
 func QuickSort(nums []int) []int {
-	quickSort(nums, 0, len(nums) - 1)
+	quickSort(nums, 0, len(nums)-1)
 	return nums
 }
 
@@ -33,8 +33,8 @@ func quickSort(nums []int, l int, r int) {
 		return
 	}
 	p := partition(nums, l, r)
-	quickSort(nums, l, p - 1)
-	quickSort(nums, p + 1, r)
+	quickSort(nums, l, p-1)
+	quickSort(nums, p+1, r)
 }
 
 func partition(nums []int, l int, r int) int {
@@ -61,4 +61,3 @@ func partition(nums []int, l int, r int) int {
 
 	return r
 }
-

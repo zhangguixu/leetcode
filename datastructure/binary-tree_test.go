@@ -29,7 +29,6 @@ func Test_postOrderVisit(t *testing.T) {
 	t.Log(head.PostOrderVisit())
 }
 
-
 func createTree() *TreeNode {
 	head := new(TreeNode)
 	head.Val = 3
@@ -53,7 +52,7 @@ func createTree() *TreeNode {
 	head.Right = t2
 
 	t1.Right = t3
-	
+
 	t2.Left = t4
 	t2.Right = t5
 

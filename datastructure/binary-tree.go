@@ -16,8 +16,8 @@ package datastructure
 		广度优先的访问是队列的思想
 */
 type TreeNode struct {
-	Val int
-	Left *TreeNode
+	Val   int
+	Left  *TreeNode
 	Right *TreeNode
 }
 

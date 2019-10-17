@@ -36,5 +36,3 @@ package datastructure
 // func (t *TreeNode) Insert(val int) {
 // 	insert(t, val)
 // }
-
-

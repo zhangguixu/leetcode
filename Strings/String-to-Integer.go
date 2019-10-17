@@ -22,9 +22,9 @@ func main() {
 // 解法的关键在于ascii编码的数值， http://ascii.911cha.com/
 const (
 	Space = 32 // 空格
-	Tab = 9 // tab键
+	Tab   = 9  // tab键
 	Minus = 45 // -号
-	Plus = 43
+	Plus  = 43
 )
 
 func isNumber(b byte) bool {
@@ -64,8 +64,8 @@ func myAtoi(str string) int {
 			}
 			continue
 		}
-		
-		num += math.Pow10(total - i) * float64(b - 48)
+
+		num += math.Pow10(total-i) * float64(b-48)
 	}
 
 	// 处理 4193 with words，必须回溯到空格之前
@@ -81,7 +81,7 @@ func myAtoi(str string) int {
 			}
 			idx--
 		}
-		num = num / math.Pow10(total - idx)
+		num = num / math.Pow10(total-idx)
 	}
 
 	// 处理负号
@@ -92,12 +92,11 @@ func myAtoi(str string) int {
 	// 处理边界
 	if num < -math.Pow(2, 31) {
 		num = -math.Pow(2, 31)
-	} 
+	}
 
-	if num > math.Pow(2, 31) - 1 {
+	if num > math.Pow(2, 31)-1 {
 		num = math.Pow(2, 31) - 1
 	}
 
 	return int(num)
 }
-

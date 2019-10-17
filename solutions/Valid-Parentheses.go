@@ -23,8 +23,8 @@ func (s *Stack) Push(r rune) {
 }
 
 func (s *Stack) Pop() string {
-	r := s.list[len(s.list) - 1]
-	s.list = s.list[:len(s.list) - 1]
+	r := s.list[len(s.list)-1]
+	s.list = s.list[:len(s.list)-1]
 	return string(r)
 }
 
@@ -39,7 +39,7 @@ func NewStack() *Stack {
 }
 
 func isValid(s string) bool {
-	if len(s) % 2 != 0 {
+	if len(s)%2 != 0 {
 		return false
 	}
 	stack := NewStack()
@@ -59,11 +59,11 @@ func isValid(s string) bool {
 		case "]":
 			if stack.Len() == 0 || stack.Pop() != "[" {
 				valid = false
-			} 
+			}
 		}
 		if !valid {
 			break
-		} 
+		}
 	}
 
 	if stack.Len() > 0 {

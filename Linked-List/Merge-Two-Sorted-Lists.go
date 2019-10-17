@@ -29,9 +29,9 @@ func print(header *ListNode) {
 }
 
 func main() {
-	print(mergeTwoLists(create([]int{1,2,4}), create([]int{1,3,4})))
-	print(mergeTwoLists(create([]int{1,2,4}), nil))
-	print(mergeTwoLists(nil, create([]int{1,3,4})))
+	print(mergeTwoLists(create([]int{1, 2, 4}), create([]int{1, 3, 4})))
+	print(mergeTwoLists(create([]int{1, 2, 4}), nil))
+	print(mergeTwoLists(nil, create([]int{1, 3, 4})))
 }
 
 func mergeTwoLists(l1 *ListNode, l2 *ListNode) *ListNode {

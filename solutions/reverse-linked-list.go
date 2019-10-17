@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 type ListNode struct {
-	Val int
+	Val  int
 	Next *ListNode
 }
 
@@ -38,7 +38,6 @@ func main() {
 	// reverseList(head)
 	reverseList(head).Print()
 }
-
 
 func reverseList(head *ListNode) *ListNode {
 	var pre *ListNode

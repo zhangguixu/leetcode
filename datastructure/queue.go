@@ -1,4 +1,4 @@
-package datastructure 
+package datastructure
 
 import (
 	"errors"
