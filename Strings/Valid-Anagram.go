@@ -35,20 +35,20 @@ func main() {
 // 运行效率目前最高的解法
 func isAnagram(s string, t string) bool {
 	if len(t) != len(s) {
-			return false
+		return false
 	}
-	
+
 	counter := [26]int{}
 	for i := 0; i < len(s); i++ {
-			counter[s[i] - 'a']++
-			counter[t[i] - 'a']--
+		counter[s[i]-'a']++
+		counter[t[i]-'a']--
 	}
-	
+
 	for _, count := range counter {
-			if count != 0 {
-					return false
-			}
+		if count != 0 {
+			return false
+		}
 	}
-	
+
 	return true
 }
