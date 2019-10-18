@@ -54,6 +54,8 @@
 - [Reverse Integer](https://leetcode.com/explore/featured/card/top-interview-questions-easy/127/strings/880/)
 - [Valid Anagram](https://leetcode.com/explore/featured/card/top-interview-questions-easy/127/strings/882/)
 - [Valid Palindrome](https://leetcode.com/explore/featured/card/top-interview-questions-easy/127/strings/883/)
+- [*Implement strStr()](https://leetcode.com/explore/featured/card/top-interview-questions-easy/127/strings/885/)
+- [Count and Say](https://leetcode.com/explore/featured/card/top-interview-questions-easy/127/strings/886/)
 
 ### Tree
 
