@@ -15,7 +15,6 @@
 
 ## leetcode刷题记录
 
-- [maximum depth of binary tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) 难度： easy，考察点：递归思想
 - [reverse linked list](https://leetcode.com/problems/reverse-linked-list/) 难度：easy，考察点：链表的基础操作
 - [majority element](https://leetcode.com/problems/majority-element/) 难度: easy，考察点：众数
 - [Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/) 难度： easy，todo
@@ -61,6 +60,8 @@
 ### Tree
 
 - [Binary Tree Level Order Traversal](https://leetcode.com/explore/featured/card/top-interview-questions-easy/94/trees/628/)
+- [Maximum Depth of Binary Tree](https://leetcode.com/explore/featured/card/top-interview-questions-easy/94/trees/555/)
+
 
 ## 参考资料
 
