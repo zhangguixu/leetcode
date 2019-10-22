@@ -62,6 +62,7 @@
 - [Binary Tree Level Order Traversal](https://leetcode.com/explore/featured/card/top-interview-questions-easy/94/trees/628/)
 - [Maximum Depth of Binary Tree](https://leetcode.com/explore/featured/card/top-interview-questions-easy/94/trees/555/)
 - [Validate Binary Search Tree](https://leetcode.com/explore/featured/card/top-interview-questions-easy/94/trees/625/)
+- [Symmetric Tree](https://leetcode.com/explore/featured/card/top-interview-questions-easy/94/trees/627/)
 
 
 ## 参考资料
