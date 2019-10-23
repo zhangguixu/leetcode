@@ -70,6 +70,9 @@
 - [Merge Sorted Array](https://leetcode.com/explore/featured/card/top-interview-questions-easy/96/sorting-and-searching/587/)
 - [First Bad Version](https://leetcode.com/explore/featured/card/top-interview-questions-easy/96/sorting-and-searching/774/)
 
+### Dynamic Programming
+
+- [Climbing Stairs](https://leetcode.com/explore/featured/card/top-interview-questions-easy/97/dynamic-programming/569/)
 
 ## 参考资料
 
