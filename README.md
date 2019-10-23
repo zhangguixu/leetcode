@@ -64,7 +64,11 @@
 - [Validate Binary Search Tree](https://leetcode.com/explore/featured/card/top-interview-questions-easy/94/trees/625/)
 - [Symmetric Tree](https://leetcode.com/explore/featured/card/top-interview-questions-easy/94/trees/627/)
 - [Convert Sorted Array to Binary Search Tree](https://leetcode.com/explore/featured/card/top-interview-questions-easy/94/trees/631/)
+
+### Sorting and Searching
+
 - [Merge Sorted Array](https://leetcode.com/explore/featured/card/top-interview-questions-easy/96/sorting-and-searching/587/)
+- [First Bad Version](https://leetcode.com/explore/featured/card/top-interview-questions-easy/96/sorting-and-searching/774/)
 
 
 ## 参考资料
