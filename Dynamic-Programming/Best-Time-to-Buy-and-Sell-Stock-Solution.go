@@ -1,5 +1,16 @@
 package main
 
+import (
+	"fmt"
+	"math"
+)
+
+func main() {
+	fmt.Println(maxProfit_v2([]int{7,1,5,3,6,4,}))
+	fmt.Println(maxProfit_v2([]int{7,6,4,3,1,}))
+	fmt.Println(maxProfit_v2([]int{7,2,4,1,6,}))
+}
+
 /*
 	动态规划(dynamic programming)是运筹学的一个分支，
 	是求解决策过程(decision process)最优化的数学方法。
@@ -38,4 +49,36 @@ func maxProfit(prices []int) int {
 		}
 	}
 	return profit
+}
+
+/*
+	上面说的这道题如果用动态规划存在误导，只是当时找不到推导的公式
+
+	假设dp[i]是第i天卖出股票的最大利润，那就是
+
+	dp[i] = max(arr[i] - arr[i - 1] + dp[i - 1] , 0)
+	dp[0] = 0
+
+	题目要求的就是最大利润，因此就是
+
+	max(dp[0], ..., dp[i])
+
+	获得递推式之后，可以开始写代码了
+*/
+func maxProfit_v2(prices []int) int {
+	maxPro := 0
+	curMax := 0
+	if len(prices) == 1 {
+		return maxPro
+	}
+	for i := 1; i < len(prices); i++ {
+		curMax = prices[i] - prices[i - 1] + curMax
+		if curMax < 0 {
+			curMax = 0
+		}
+		if maxPro < curMax {
+			maxPro = curMax
+		}
+	}
+	return maxPro
 }
