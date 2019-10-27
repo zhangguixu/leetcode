@@ -77,6 +77,10 @@
 - [Maximum Subarray](https://leetcode.com/explore/featured/card/top-interview-questions-easy/97/dynamic-programming/566/)
 - [House Robber](https://leetcode.com/explore/featured/card/top-interview-questions-easy/97/dynamic-programming/576/)
 
+### Design
+
+- [Shuffle an Array](https://leetcode.com/explore/featured/card/top-interview-questions-easy/98/design/670/)
+
 ## 参考资料
 
 - [leetcode刷题记录](https://github.com/azl397985856/leetcode)
