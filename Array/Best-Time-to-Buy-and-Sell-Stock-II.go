@@ -1,15 +1,27 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 func main() {
+	fmt.Println(maxProfit_bad([]int{7, 1, 5, 3, 6, 4}))
+	fmt.Println(maxProfit_bad([]int{7, 6, 4, 3, 1}))
+	fmt.Println(maxProfit_bad([]int{1, 2, 3, 4, 5}))
+	fmt.Println(maxProfit_bad([]int{3, 2, 6, 5, 0, 3}))
+	fmt.Println(maxProfit_bad([]int{2, 1, 2, 1, 0, 1, 2}))
+
+	fmt.Println("=================================================")
+
 	fmt.Println(maxProfit([]int{7, 1, 5, 3, 6, 4}))
 	fmt.Println(maxProfit([]int{7, 6, 4, 3, 1}))
 	fmt.Println(maxProfit([]int{1, 2, 3, 4, 5}))
 	fmt.Println(maxProfit([]int{3, 2, 6, 5, 0, 3}))
 	fmt.Println(maxProfit([]int{2, 1, 2, 1, 0, 1, 2}))
+	fmt.Println(maxProfit([]int{2,4,1}))
 }
-
+ 
 /*
 	贪心算法:
 	追求局部最优
@@ -23,6 +35,8 @@ func main() {
 	买卖股票的策略
 
 	将数组中的值展开为一个曲线图，可以看到整体一个发展趋势，波峰 - 波低
+
+	这道题没有很好的理解，，明天好好研究一下
 */
 // func maxProfit(prices []int) int {
 // 	maxP := 0
@@ -64,7 +78,7 @@ func main() {
 // 	}
 // 	return crestIndex
 // }
-func maxProfit(prices []int) int {
+func maxProfit_bad(prices []int) int {
 	total := len(prices)
 	profit := 0
 	for i := 0; i < total-1; i++ {
@@ -85,3 +99,27 @@ func maxProfit(prices []int) int {
 	}
 	return profit
 }
+
+// func maxProfit(prices []int) int {
+// 	profit := 0
+// 	min := math.MaxInt64
+// 	max := math.MinInt64
+// 	n := len(prices)
+// 	for i := 0; i < n - 1; i++ {
+// 		if prices[i] <= prices[i + 1] {
+// 			min = prices[i + 1]
+// 			continue
+// 		}
+// 		if max <= prices[i] {
+// 			max = prices[i]
+// 			continue
+// 		}
+// 		profit += max - min
+// 		min = prices[i]
+// 		max = math.MinInt64
+// 	}
+// 	if max > min {
+// 		profit += max - min
+// 	}
+// 	return profit
+// }
