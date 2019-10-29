@@ -30,12 +30,12 @@
 - [Remove Duplicates from Sorted Array](https://leetcode.com/explore/featured/card/top-interview-questions-easy/92/array/727/)
 - [Best Time to Buy and Sell Stock II](https://leetcode.com/explore/featured/card/top-interview-questions-easy/92/array/564/)
 - [Rotate Array](https://leetcode.com/explore/featured/card/top-interview-questions-easy/92/array/646/)
+- [Contains Duplicate](https://leetcode.com/explore/featured/card/top-interview-questions-easy/92/array/578/)
 - [Move Zeroes](https://leetcode.com/problems/move-zeroes/) 难度：easy
 - [single number](https://leetcode.com/problems/single-number/) 难度：easy，考察点：位运算 异或
 - [two sum](https://leetcode.com/problems/two-sum/) 难度： easy，考察点：array hash table
 - [Valid Sudoku](https://leetcode.com/explore/featured/card/top-interview-questions-easy/92/array/769/)
 - [Plus one](https://leetcode.com/explore/featured/card/top-interview-questions-easy/92/array/559/)
-- [Contains Duplicate](https://leetcode.com/explore/featured/card/top-interview-questions-easy/92/array/578/)
 - [Intersection of Two Arrays II](https://leetcode.com/explore/featured/card/top-interview-questions-easy/92/array/674/)
 - [Rotate Image](https://leetcode.com/explore/featured/card/top-interview-questions-easy/92/array/770/)
 
