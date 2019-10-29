@@ -2,18 +2,9 @@ package main
 
 import (
 	"fmt"
-	"math"
 )
 
 func main() {
-	fmt.Println(maxProfit_bad([]int{7, 1, 5, 3, 6, 4}))
-	fmt.Println(maxProfit_bad([]int{7, 6, 4, 3, 1}))
-	fmt.Println(maxProfit_bad([]int{1, 2, 3, 4, 5}))
-	fmt.Println(maxProfit_bad([]int{3, 2, 6, 5, 0, 3}))
-	fmt.Println(maxProfit_bad([]int{2, 1, 2, 1, 0, 1, 2}))
-
-	fmt.Println("=================================================")
-
 	fmt.Println(maxProfit([]int{7, 1, 5, 3, 6, 4}))
 	fmt.Println(maxProfit([]int{7, 6, 4, 3, 1}))
 	fmt.Println(maxProfit([]int{1, 2, 3, 4, 5}))
@@ -21,64 +12,42 @@ func main() {
 	fmt.Println(maxProfit([]int{2, 1, 2, 1, 0, 1, 2}))
 	fmt.Println(maxProfit([]int{2,4,1}))
 }
- 
+
 /*
-	贪心算法:
-	追求局部最优
-	1.建立数学模型来描述问题。
-    2.把求解的问题分成若干个子问题。
-    3.对每一子问题求解，得到子问题的局部最优解。
-	4.把子问题的解局部最优解合成原来解问题的一个解。
+	算法复杂度分析
 
-	贪心算法的证明围绕着：整个问题的最优解一定由在贪心策略中存在的子问题的最优解得来的
+		Time complextiy : O(n)
+		Space complexity : O(1)
 
-	买卖股票的策略
+	思路总结
 
-	将数组中的值展开为一个曲线图，可以看到整体一个发展趋势，波峰 - 波低
+		*此题的关键在于画图，从图表的变化可以很快找到答案
 
-	这道题没有很好的理解，，明天好好研究一下
+		Peak Valley Approach，找到每一个起伏中的波峰和波谷，在波谷进行买入，在波峰卖出，获取局部的最大利润，
+
+		将局部最大利润累加，获取全部最大的利润
+
+	solution是否已读
+
+		solution给出了三种方法
+
+		1） brute Force 暴力破解
+
+		2） Peak Valley Approach 
+		
+		也是本人解法思路，在实现上，可以更加简洁，
+		见maxProfit_v1，原solution给的解法是在数组为空的时候，会runtime error
+
+		3） Peak Valley Approach  改进版
+
+		见 maxProfit_v2
+
+	top 5 votes discuss 是否已读
+		
+		已读，都是solution中提到的解法
+
 */
-// func maxProfit(prices []int) int {
-// 	maxP := 0
-// 	total := len(prices)
-// 	for i := 0; i < total; i++ {
-// 		profit := 0
-// 		for j := i; j < total; j++ {
-// 			if j+1 < total && prices[j] > prices[j+1] {
-// 				continue
-// 			}
-// 			crestIndex := findCrest(prices, j, total - 1)
-// 			if crestIndex == -1 {
-// 				continue
-// 			}
-// 			fmt.Println(prices[crestIndex], prices[j])
-// 			profit += prices[crestIndex] - prices[j]
-// 			j = crestIndex
-// 		}
-// 		if profit > maxP {
-// 			maxP = profit
-// 		}
-// 	}
-// 	return maxP
-// }
-
-// func findCrest(prices []int, start, end int) (crestIndex int) {
-// 	crestIndex = -1
-// 	i := start + 1
-// 	for i < end {
-// 		if prices[start] < prices[i] && prices[i] > prices[i+1] {
-// 			crestIndex = i
-// 			break
-// 		}
-// 		i++
-// 	}
-// 	if i == end && prices[i] > prices[start] {
-// 		fmt.Println("--", i, start)
-// 		crestIndex = i
-// 	}
-// 	return crestIndex
-// }
-func maxProfit_bad(prices []int) int {
+func maxProfit(prices []int) int {
 	total := len(prices)
 	profit := 0
 	for i := 0; i < total-1; i++ {
@@ -100,26 +69,36 @@ func maxProfit_bad(prices []int) int {
 	return profit
 }
 
-// func maxProfit(prices []int) int {
-// 	profit := 0
-// 	min := math.MaxInt64
-// 	max := math.MinInt64
-// 	n := len(prices)
-// 	for i := 0; i < n - 1; i++ {
-// 		if prices[i] <= prices[i + 1] {
-// 			min = prices[i + 1]
-// 			continue
-// 		}
-// 		if max <= prices[i] {
-// 			max = prices[i]
-// 			continue
-// 		}
-// 		profit += max - min
-// 		min = prices[i]
-// 		max = math.MinInt64
-// 	}
-// 	if max > min {
-// 		profit += max - min
-// 	}
-// 	return profit
-// }
+func maxProfit_v1(prices []int) int {
+	maxprofit := 0
+	valley := 0
+	peak := 0
+	i := 0
+	for i < len(prices) - 1 {
+		for i < len(prices) - 1 && prices[i] >= prices[i + 1] {
+			i++
+		}
+		valley = prices[i]
+		for i < len(prices) - 1 && prices[i] <= prices[i + 1] {
+			i++
+		}
+		peak = prices[i]
+		maxprofit += peak - valley
+	}
+	return maxprofit
+}
+
+/*
+	依旧是Peak Valley Approach，
+
+	波峰 - 波谷 = 每一小段的差值累加
+*/
+func maxProfit_v2(prices []int) int {
+	maxprofit := 0
+	for i := 1; i < len(prices) ; i++ {
+		if prices[i] > prices[i - 1] {
+			maxprofit += prices[i] - prices[i - 1]
+		}
+	}
+	return maxprofit
+}
