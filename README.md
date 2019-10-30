@@ -33,10 +33,10 @@
 - [Contains Duplicate](https://leetcode.com/explore/featured/card/top-interview-questions-easy/92/array/578/)
 - [Intersection of Two Arrays II](https://leetcode.com/explore/featured/card/top-interview-questions-easy/92/array/674/)
 - [single number](https://leetcode.com/explore/featured/card/top-interview-questions-easy/92/array/549/)
+- [Plus one](https://leetcode.com/explore/featured/card/top-interview-questions-easy/92/array/559/)
 - [Move Zeroes](https://leetcode.com/problems/move-zeroes/) 难度：easy
 - [two sum](https://leetcode.com/problems/two-sum/) 难度： easy，考察点：array hash table
 - [Valid Sudoku](https://leetcode.com/explore/featured/card/top-interview-questions-easy/92/array/769/)
-- [Plus one](https://leetcode.com/explore/featured/card/top-interview-questions-easy/92/array/559/)
 - [Rotate Image](https://leetcode.com/explore/featured/card/top-interview-questions-easy/92/array/770/)
 
 ### Linked List
