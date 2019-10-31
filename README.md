@@ -35,7 +35,7 @@
 - [single number](https://leetcode.com/explore/featured/card/top-interview-questions-easy/92/array/549/)
 - [Plus one](https://leetcode.com/explore/featured/card/top-interview-questions-easy/92/array/559/)
 - [Move Zeroes](https://leetcode.com/explore/featured/card/top-interview-questions-easy/92/array/567/)
-- [two sum](https://leetcode.com/problems/two-sum/)
+- [Two Sum](https://leetcode.com/explore/featured/card/top-interview-questions-easy/92/array/546/)
 - [Valid Sudoku](https://leetcode.com/explore/featured/card/top-interview-questions-easy/92/array/769/)
 - [Rotate Image](https://leetcode.com/explore/featured/card/top-interview-questions-easy/92/array/770/)
 
