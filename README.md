@@ -39,13 +39,6 @@
 - [Valid Sudoku](https://leetcode.com/explore/featured/card/top-interview-questions-easy/92/array/769/)
 - [Rotate Image](https://leetcode.com/explore/featured/card/top-interview-questions-easy/92/array/770/)
 
-### Linked List
-
-- [Merge Two Sorted Lists](https://leetcode.com/explore/featured/card/top-interview-questions-easy/93/linked-list/771/)
-- [Palindrome Linked List](https://leetcode.com/explore/featured/card/top-interview-questions-easy/93/linked-list/772/)
-- [Linked List Cycle](https://leetcode.com/explore/featured/card/top-interview-questions-easy/93/linked-list/773/)
-- [Remove Nth Node From End of List](https://leetcode.com/explore/featured/card/top-interview-questions-easy/127/strings/886/)
-
 ### Strings
 
 - [Reverse String](https://leetcode.com/explore/featured/card/top-interview-questions-easy/127/strings/879/)
@@ -56,6 +49,13 @@
 - [Valid Palindrome](https://leetcode.com/explore/featured/card/top-interview-questions-easy/127/strings/883/)
 - [*Implement strStr()](https://leetcode.com/explore/featured/card/top-interview-questions-easy/127/strings/885/)
 - [Count and Say](https://leetcode.com/explore/featured/card/top-interview-questions-easy/127/strings/886/)
+
+### Linked List
+
+- [Merge Two Sorted Lists](https://leetcode.com/explore/featured/card/top-interview-questions-easy/93/linked-list/771/)
+- [Palindrome Linked List](https://leetcode.com/explore/featured/card/top-interview-questions-easy/93/linked-list/772/)
+- [Linked List Cycle](https://leetcode.com/explore/featured/card/top-interview-questions-easy/93/linked-list/773/)
+- [Remove Nth Node From End of List](https://leetcode.com/explore/featured/card/top-interview-questions-easy/127/strings/886/)
 
 ### Tree
 
