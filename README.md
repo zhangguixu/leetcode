@@ -45,8 +45,8 @@
 - [Reverse Integer](https://leetcode.com/explore/featured/card/top-interview-questions-easy/127/strings/880/)
 - [First Unique Character in a String](https://leetcode.com/explore/featured/card/top-interview-questions-easy/127/strings/881/)
 - [Valid Anagram](https://leetcode.com/explore/featured/card/top-interview-questions-easy/127/strings/882/)
-- [String to Integer](https://leetcode.com/explore/featured/card/top-interview-questions-easy/127/strings/884/)
 - [Valid Palindrome](https://leetcode.com/explore/featured/card/top-interview-questions-easy/127/strings/883/)
+- [String to Integer](https://leetcode.com/explore/featured/card/top-interview-questions-easy/127/strings/884/)
 - [*Implement strStr()](https://leetcode.com/explore/featured/card/top-interview-questions-easy/127/strings/885/)
 - [Count and Say](https://leetcode.com/explore/featured/card/top-interview-questions-easy/127/strings/886/)
 
