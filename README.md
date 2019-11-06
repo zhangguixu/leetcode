@@ -28,7 +28,7 @@
 [leecode tag array](https://leetcode-cn.com/tag/array/)
 
 - [27. Remove Element](https://leetcode-cn.com/problems/remove-element/)
-
+- [35. Search Insert Position](https://leetcode-cn.com/problems/search-insert-position/)
 
 ## leetcode初级入门专题训练
 

@@ -14,6 +14,9 @@ func main() {
 	print(nums, removeElement(nums, 2))
 }
 
+/*
+	two pointer 
+*/
 func removeElement(nums []int, val int) int {
 	idx := 0
 	for i := 0; i < len(nums); i++ {
