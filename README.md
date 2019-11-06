@@ -21,6 +21,15 @@
 - [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) 难度: easy
 - [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) 难度：easy，考察点：stack
 
+## leetcode数据结构专题训练
+
+### Array 
+
+[leecode tag array](https://leetcode-cn.com/tag/array/)
+
+- [27. Remove Element](https://leetcode-cn.com/problems/remove-element/)
+
+
 ## leetcode初级入门专题训练
 
 [初级入门专题练习](https://leetcode.com/explore/featured/card/top-interview-questions-easy/)
