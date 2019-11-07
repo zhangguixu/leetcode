@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println(generate(2))
+	fmt.Println(generate_v1(5))
 }
 
 /*
@@ -36,7 +36,6 @@ func generate(numRows int) [][]int {
 		for j := 0; j <= i; j++ {
 			if i - 1 < 0 {
 				nums[i][j] = 1
-				break
 			}
 			if j - 1 >= 0 {
 				nums[i][j] += nums[i - 1][j - 1]
@@ -49,4 +48,20 @@ func generate(numRows int) [][]int {
 	return nums
 }
 
-
+/*
+	实现可以简洁一点
+*/
+func generate_v1(numRows int) [][]int {
+	nums := make([][]int, numRows, numRows)
+  for i := 0; i < numRows; i++ {
+		nums[i] = make([]int, i + 1, i + 1)
+		for j := 0; j <= i; j++ {
+			if j == 0 || j == i {
+				nums[i][j] = 1
+			} else {
+				nums[i][j] = nums[i - 1][j - 1] + nums[i - 1][j - 1]
+			}
+		}
+	}
+	return nums
+}

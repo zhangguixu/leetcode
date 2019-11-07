@@ -30,6 +30,7 @@
 - [27. Remove Element](https://leetcode-cn.com/problems/remove-element/)
 - [35. Search Insert Position](https://leetcode-cn.com/problems/search-insert-position/)
 - [118. Pascal's Triangle](https://leetcode-cn.com/problems/pascals-triangle/)
+- [119. Pascal's Triangle II](https://leetcode-cn.com/problems/pascals-triangle-ii/)
 
 ## leetcode初级入门专题训练
 
