@@ -34,6 +34,7 @@
 - [219. Contains Duplicate II](https://leetcode-cn.com/problems/contains-duplicate-ii/)
 - [268. Missing Number](https://leetcode-cn.com/problems/missing-number/)
 - [414. Third Maximum Number](https://leetcode-cn.com/problems/third-maximum-number/)
+- [448. Find All Numbers Disappeared in an Array](https://leetcode-cn.com/problems/find-all-numbers-disappeared-in-an-array/)
 
 ## leetcode初级入门专题训练
 
