@@ -32,6 +32,8 @@
 - [119. Pascal's Triangle II](https://leetcode-cn.com/problems/pascals-triangle-ii/)
 - [169. Majority Element](https://leetcode-cn.com/problems/majority-element/)
 - [219. Contains Duplicate II](https://leetcode-cn.com/problems/contains-duplicate-ii/)
+- [268. Missing Number](https://leetcode-cn.com/problems/missing-number/)
+- [414. Third Maximum Number](https://leetcode-cn.com/problems/third-maximum-number/)
 
 ## leetcode初级入门专题训练
 
