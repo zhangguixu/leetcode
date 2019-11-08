@@ -35,16 +35,16 @@ func main() {
 	思路总结
 
 		此题目用到一些数组的通用思路：
-	
+
 		1）题目要求in-place，就说明操作只能是原数组的元素的交换，或者元素的覆盖
 		2）通过若干个额外的变量来记录一些状态（需要对题目进行分析）
 
 	solution是否已读
 
 		已读，solution和下面的实现是一致的。
-	
+
 	top 5 votes discuss 是否已读
-		
+
 		已读，吸收了top1的实现，见removeDuplicates_v1
 
 */
@@ -54,7 +54,7 @@ func removeDuplicates(nums []int) int {
 	}
 	idx := 1
 	for i := 1; i < len(nums); i++ {
-		if nums[i - 1] == nums[i] {
+		if nums[i-1] == nums[i] {
 			continue
 		}
 		nums[idx] = nums[i]
@@ -65,7 +65,7 @@ func removeDuplicates(nums []int) int {
 
 /*
 	votes最多的discuss给出的实现，实现更为简洁一点
-	
+
 	记录重复的个数
 	那么去重数组的下标就是 i - 重复的个数
 */
@@ -75,11 +75,11 @@ func removeDuplicates_v1(nums []int) int {
 	}
 	count := 0
 	for i := 1; i < len(nums); i++ {
-		if nums[i] == nums[i - 1] {
+		if nums[i] == nums[i-1] {
 			count++
 			continue
 		}
-		nums[i - count] = nums[i]
+		nums[i-count] = nums[i]
 	}
 	return len(nums) - count
 }

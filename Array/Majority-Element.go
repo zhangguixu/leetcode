@@ -9,28 +9,27 @@ func main() {
 	fmt.Println(majorityElement([]int{2, 2, 1, 1, 1, 2, 2}))
 }
 
-// o(n)的做法，
-// func majorityElement(nums []int) int {
+/*
+	hashtable
 
-// 	tmpMap := make(map[int]int, 0)
-// 	max := 0
-// 	m := 0
-// 	total := len(nums)
+	时间复杂度为O(n)
+	空间复杂度为O(n)
 
-//     for _, n := range nums {
-// 		tmpMap[n]++
-// 		if max < tmpMap[n] {
-// 			max = tmpMap[n]
-// 			m = n
-// 			// 符合中位数定义
-// 			if 2 * max >= total {
-// 				break
-// 			}
-// 		}
-// 	}
+	注意使用除法判断会有精度的问题，导致判断不准，如长度是7 / 2 = 3，会导致示例case无法通过
+*/
+func majorityElement(nums []int) int {
+	countMap := make(map[int]int, 0)
+	total := len(nums)
 
-// 	return m
-// }
+	for i := 0; i < total; i++ {
+		countMap[nums[i]]++
+		if countMap[nums[i]] * 2 >= total {
+			return nums[i]
+		}
+	}
+
+	return 0
+}
 
 // nlog(n)的做法，先排序，由于是众数的定义，因此下标为[n / 2]或者[n / 2 + 1]就是众数
 /*
@@ -42,7 +41,7 @@ func main() {
  比较两个元素大小的Less()方法和交换两个元素位置的Swap()方法，就可以顺利对数据集合进行排序。
  sort包会根据实际数据自动选择高效的排序算法。
 */
-func majorityElement(nums []int) int {
+func majorityElement_v1(nums []int) int {
 	sort.Ints(nums)
 	return nums[len(nums)/2]
 }

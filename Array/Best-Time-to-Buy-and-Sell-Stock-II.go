@@ -10,7 +10,7 @@ func main() {
 	fmt.Println(maxProfit([]int{1, 2, 3, 4, 5}))
 	fmt.Println(maxProfit([]int{3, 2, 6, 5, 0, 3}))
 	fmt.Println(maxProfit([]int{2, 1, 2, 1, 0, 1, 2}))
-	fmt.Println(maxProfit([]int{2,4,1}))
+	fmt.Println(maxProfit([]int{2, 4, 1}))
 }
 
 /*
@@ -33,8 +33,8 @@ func main() {
 
 		1） brute Force 暴力破解
 
-		2） Peak Valley Approach 
-		
+		2） Peak Valley Approach
+
 		也是本人解法思路，在实现上，可以更加简洁，
 		见maxProfit_v1，原solution给的解法是在数组为空的时候，会runtime error
 
@@ -43,7 +43,7 @@ func main() {
 		见 maxProfit_v2
 
 	top 5 votes discuss 是否已读
-		
+
 		已读，都是solution中提到的解法
 
 */
@@ -74,12 +74,12 @@ func maxProfit_v1(prices []int) int {
 	valley := 0
 	peak := 0
 	i := 0
-	for i < len(prices) - 1 {
-		for i < len(prices) - 1 && prices[i] >= prices[i + 1] {
+	for i < len(prices)-1 {
+		for i < len(prices)-1 && prices[i] >= prices[i+1] {
 			i++
 		}
 		valley = prices[i]
-		for i < len(prices) - 1 && prices[i] <= prices[i + 1] {
+		for i < len(prices)-1 && prices[i] <= prices[i+1] {
 			i++
 		}
 		peak = prices[i]
@@ -95,9 +95,9 @@ func maxProfit_v1(prices []int) int {
 */
 func maxProfit_v2(prices []int) int {
 	maxprofit := 0
-	for i := 1; i < len(prices) ; i++ {
-		if prices[i] > prices[i - 1] {
-			maxprofit += prices[i] - prices[i - 1]
+	for i := 1; i < len(prices); i++ {
+		if prices[i] > prices[i-1] {
+			maxprofit += prices[i] - prices[i-1]
 		}
 	}
 	return maxprofit

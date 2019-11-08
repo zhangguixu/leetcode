@@ -17,11 +17,11 @@ func main() {
 func getRow(rowIndex int) []int {
 	var curRow, lastRow []int
 	for i := 0; i <= rowIndex; i++ {
-		curRow = make([]int, 0, i + 1)
+		curRow = make([]int, 0, i+1)
 		for j := 0; j <= i; j++ {
 			target := 1
 			if j != 0 && j != i {
-				target = lastRow[j - 1] + lastRow[j]
+				target = lastRow[j-1] + lastRow[j]
 			}
 			curRow = append(curRow, target)
 		}
@@ -45,7 +45,7 @@ func getRow(rowIndex int) []int {
 	=> [1, 4, 6, 4, 1]
 */
 func getRow_v1(rowIndex int) []int {
-	cur := make([]int, rowIndex + 1, rowIndex + 1)
+	cur := make([]int, rowIndex+1, rowIndex+1)
 	for i := 0; i <= rowIndex; i++ {
 		cur[i] = 1
 		pre := 1

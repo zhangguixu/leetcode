@@ -10,12 +10,12 @@ func print(nums []int, n int) {
 }
 
 func main() {
-	nums := []int{0,1,2,2,3,0,4,2}
+	nums := []int{0, 1, 2, 2, 3, 0, 4, 2}
 	print(nums, removeElement(nums, 2))
 }
 
 /*
-	two pointer 
+	two pointer
 */
 func removeElement(nums []int, val int) int {
 	idx := 0

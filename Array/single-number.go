@@ -5,12 +5,10 @@ import (
 	"sort"
 )
 
-
 func main() {
-	fmt.Println(singleNumber_v2([]int{2,2,1}))
-	fmt.Println(singleNumber_v2([]int{4,1,2,1,2}))
+	fmt.Println(singleNumber_v2([]int{2, 2, 1}))
+	fmt.Println(singleNumber_v2([]int{4, 1, 2, 1, 2}))
 }
-
 
 /*
 	借助hashtable的思路：
@@ -49,9 +47,9 @@ func singleNumber(nums []int) int {
 
 	利用异或运算的特点
 
-	a ^ a  = 0 
+	a ^ a  = 0
 	0 ^ b = b
-	
+
 	a ^ a ^ b = b
 */
 func singleNumber_v1(nums []int) int {
@@ -85,7 +83,7 @@ func (l List) Less(i, j int) bool {
 func singleNumber_v2(nums []int) int {
 	sort.Sort(List(nums))
 	i := 0
-	for i < len(nums) - 1 {
+	for i < len(nums)-1 {
 		if nums[i] != nums[i+1] {
 			return nums[i]
 		}

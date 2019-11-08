@@ -36,7 +36,7 @@ func main() {
 	Each row must contain the digits 1-9 without repetition.
 	Each column must contain the digits 1-9 without repetition.
 	Each of the 9 3x3 sub-boxes of the grid must contain the digits 1-9 without repetition.
-	
+
 	题目中给定的尺寸都是 9 * 9，因此这里就无需校验的
 
 	保证1-9不重复
@@ -63,7 +63,7 @@ type Position struct {
 }
 
 func isRepeated(p1 *Position, p2 *Position) bool {
-	if p1.X == p2.X || p1.Y == p2.Y || (p1.X / 3 == p2.X / 3 && p1.Y / 3 == p2.Y / 3) {
+	if p1.X == p2.X || p1.Y == p2.Y || (p1.X/3 == p2.X/3 && p1.Y/3 == p2.Y/3) {
 		return true
 	}
 	return false
@@ -115,7 +115,7 @@ func isValidSudoku_v1(board [][]byte) bool {
 			}
 			rStr := string([]byte{'(', b, ')', byte(i + 48)})
 			cStr := string([]byte{byte(j + 48), '(', b, ')'})
-			bStr := string([]byte{byte(i / 3 + 48), '(', b, ')', byte(j / 3 + 48)})
+			bStr := string([]byte{byte(i/3 + 48), '(', b, ')', byte(j/3 + 48)})
 			if m[rStr] == 1 || m[cStr] == 1 || m[bStr] == 1 {
 				return false
 			}
@@ -167,5 +167,3 @@ func isValidCube(board [][]byte, row, col int) bool {
 	}
 	return true
 }
-
-

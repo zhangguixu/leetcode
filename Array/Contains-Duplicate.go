@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	fmt.Println(containsDuplicate_v1([]int{1,2,3,1}))
+	fmt.Println(containsDuplicate_v1([]int{1, 2, 3, 1}))
 }
 
 /*
@@ -14,7 +14,7 @@ func main() {
 
 		时间复杂度是 O(n)
 		空间复杂度是 O(n)
-	
+
 	使用hashtable进行元素的计数
 */
 func containsDuplicate(nums []int) bool {
@@ -32,7 +32,7 @@ func containsDuplicate(nums []int) bool {
 	在solution中，除了暴力破解，还有一种解法是先给数组排序，然后在遍历数组，这个时候就只需要O(1)的空间，就可以找出是否有重复的元素
 
 	这种实现的时间复杂度只要看排序的时间复杂度
-	
+
 	估算的时间复杂度： O(nlogN) ~ O(n)
 	空间复杂度： O(1)
 
@@ -55,11 +55,10 @@ func (l List) Less(i, j int) bool {
 func containsDuplicate_v1(nums []int) bool {
 	sort.Sort(List(nums))
 	fmt.Println(nums)
-	for i := 0; i < len(nums) - 1; i++ {
-		if nums[i] == nums[i + 1] {
+	for i := 0; i < len(nums)-1; i++ {
+		if nums[i] == nums[i+1] {
 			return true
 		}
 	}
 	return false
 }
-

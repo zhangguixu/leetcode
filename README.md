@@ -31,6 +31,7 @@
 - [35. Search Insert Position](https://leetcode-cn.com/problems/search-insert-position/)
 - [118. Pascal's Triangle](https://leetcode-cn.com/problems/pascals-triangle/)
 - [119. Pascal's Triangle II](https://leetcode-cn.com/problems/pascals-triangle-ii/)
+- [169. Majority Element](https://leetcode-cn.com/problems/majority-element/)
 
 ## leetcode初级入门专题训练
 

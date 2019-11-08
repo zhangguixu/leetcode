@@ -10,7 +10,7 @@ func main() {
 }
 
 /*
-	two pass hashtable 
+	two pass hashtable
 	借助额外的空间来减少时间复杂度
 	原来也是借助hashtable实现，但是实现的有问题，特别的丑陋，其实是可以在原来的代码基础上优化的
 	后续练习要多注意
@@ -33,7 +33,7 @@ func twoSum(nums []int, target int) []int {
 }
 
 /*
-	One pass hashtable 
+	One pass hashtable
 
 	对上述方法的优化，减少一次遍历
 
@@ -54,7 +54,6 @@ func twoSum_v2(nums []int, target int) []int {
 	return res
 }
 
-
 /*
 	数组解题技巧： 有序数组是否可以降低解决问题的难度
 
@@ -72,6 +71,6 @@ func twoSum_v2(nums []int, target int) []int {
 	空间复杂度：O(n)
 
 	比不上使用hashtable的方便，
-	
+
 	此想法落地太丑陋了，忽略
 */

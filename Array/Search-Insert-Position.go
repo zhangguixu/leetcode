@@ -3,9 +3,9 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println(searchInsert_v1([]int{1,3,5,6}, 2)) // 1
-	fmt.Println(searchInsert_v1([]int{1,3,5,6}, 0)) // 0
-	fmt.Println(searchInsert_v1([]int{1,3,5,6}, 7)) // 4
+	fmt.Println(searchInsert_v1([]int{1, 3, 5, 6}, 2)) // 1
+	fmt.Println(searchInsert_v1([]int{1, 3, 5, 6}, 0)) // 0
+	fmt.Println(searchInsert_v1([]int{1, 3, 5, 6}, 7)) // 4
 }
 
 /*
@@ -21,7 +21,7 @@ func main() {
 */
 func searchInsert(nums []int, target int) int {
 	var i int
-  for i = 0; i < len(nums); i++ {
+	for i = 0; i < len(nums); i++ {
 		if nums[i] == target || nums[i] > target {
 			return i
 		}

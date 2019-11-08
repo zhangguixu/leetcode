@@ -33,7 +33,7 @@ func main() {
 	观察元素1，3，9，7，数组旋转，这四个元素刚好是互换位置，其坐标的变化是
 
 	1 [0,0] -> 3 [0,2] -> 9 [2,2] -> 7 [2,0] -> 1 [0,0]
-									
+
 	假设 i = 0, j = 0 那么就有规律
 
 	1 [i, j] -> 3 [j , n - i - 1] -> 9 [n - i - 1, n - j - 1] -> 7 [n - j - 1, n - (n - i - 1) - 1 = i] -> [i, n - (n - j - 1) - 1 = j]
@@ -68,12 +68,12 @@ func rotate(matrix [][]int) {
 /*
 	discuss中投票最多的答案，给出了两种旋转的方式，但是有一个问题是：这是如何想到的。
 
-	1） 顺时针旋转：first reverse up to down, then swap the symmetry 
+	1） 顺时针旋转：first reverse up to down, then swap the symmetry
 
 	1 2 3     7 8 9     7 4 1
  	4 5 6  => 4 5 6  => 8 5 2
 	7 8 9     1 2 3     9 6 3
-	
+
 	2） 逆时针旋转：first reverse left to right, then swap the symmetry
 
 	1 2 3     3 2 1     3 6 9

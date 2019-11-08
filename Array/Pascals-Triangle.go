@@ -31,17 +31,17 @@ func main() {
 
 func generate(numRows int) [][]int {
 	nums := make([][]int, numRows, numRows)
-  for i := 0; i < numRows; i++ {
-		nums[i] = make([]int, i + 1, i + 1)
+	for i := 0; i < numRows; i++ {
+		nums[i] = make([]int, i+1, i+1)
 		for j := 0; j <= i; j++ {
-			if i - 1 < 0 {
+			if i-1 < 0 {
 				nums[i][j] = 1
 			}
-			if j - 1 >= 0 {
-				nums[i][j] += nums[i - 1][j - 1]
+			if j-1 >= 0 {
+				nums[i][j] += nums[i-1][j-1]
 			}
 			if j < i {
-				nums[i][j] += nums[i - 1][j]
+				nums[i][j] += nums[i-1][j]
 			}
 		}
 	}
@@ -53,13 +53,13 @@ func generate(numRows int) [][]int {
 */
 func generate_v1(numRows int) [][]int {
 	nums := make([][]int, numRows, numRows)
-  for i := 0; i < numRows; i++ {
-		nums[i] = make([]int, i + 1, i + 1)
+	for i := 0; i < numRows; i++ {
+		nums[i] = make([]int, i+1, i+1)
 		for j := 0; j <= i; j++ {
 			if j == 0 || j == i {
 				nums[i][j] = 1
 			} else {
-				nums[i][j] = nums[i - 1][j - 1] + nums[i - 1][j - 1]
+				nums[i][j] = nums[i-1][j-1] + nums[i-1][j-1]
 			}
 		}
 	}

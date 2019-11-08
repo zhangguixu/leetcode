@@ -62,14 +62,14 @@ func plusOne_v1(digits []int) []int {
 	reverse(digits)
 	digits[0] += 1
 	for i := 1; i < n; i++ {
-		if digits[i - 1] <= 9 {
+		if digits[i-1] <= 9 {
 			break
 		}
-		digits[i - 1] -= 10
+		digits[i-1] -= 10
 		digits[i] += 1
 	}
-	if digits[n - 1] >= 10 {
-		digits[n - 1] -= 10
+	if digits[n-1] >= 10 {
+		digits[n-1] -= 10
 		digits = append(digits, 1)
 	}
 	reverse(digits)
