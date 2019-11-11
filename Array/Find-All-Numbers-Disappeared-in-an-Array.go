@@ -19,6 +19,10 @@ func main() {
 	要求
 	空间复杂度: O(1)
 	时间复杂度: O(n)
+*/
+
+/*
+	标记法：
 
 	思路，
 	数组的元素和下标存在关系：如果没有缺失的情况下，将数组元素的值 - 1 作为下标可以有且只有一次访问到数组的所有元素，即
@@ -41,9 +45,9 @@ func main() {
 	1         1               3
 	2         1               3
 
-	a[i] - 1代表的下标会被重复访问，可以利用数组自身来记录元素是否已经通过a[i] - 1的方式访问过了
-
 	这里采用的方式是 将a[a[i] - 1] =  a[a[i] - 1] * (n + 1) 来标记已经访问过的状态
+
+	这里
 */
 func findDisappearedNumbers(nums []int) []int {
 	total := len(nums)
@@ -66,6 +70,8 @@ func findDisappearedNumbers(nums []int) []int {
 }
 
 /*
+	交换法：
+
 	在讨论中看到另一种解法，核心思路跟上述的一样的，就是数组的元素和下标之间存在着关系
 
 	这里使用的是交换，就是将a[i] 元素放在 a[a[i] - 1]上，
@@ -79,8 +85,6 @@ func findDisappearedNumbers(nums []int) []int {
 	1         1            1 <=> 1                 [1,1,3,4]
 	2         1            3 <=> 3                 [1,1,3,4]
 	3         4            4 <=> 4                 [1,1,3,4]   
-
-	还未完全理解，需要找个时间再看看
 */
 func findDisappearedNumbers_v1(nums []int) []int {
 	res := make([]int, 0)
