@@ -35,6 +35,7 @@
 - [268. Missing Number](https://leetcode-cn.com/problems/missing-number/)
 - [414. Third Maximum Number](https://leetcode-cn.com/problems/third-maximum-number/)
 - [448. Find All Numbers Disappeared in an Array](https://leetcode-cn.com/problems/find-all-numbers-disappeared-in-an-array/)
+- [485. Max Consecutive Ones](https://leetcode-cn.com/problems/max-consecutive-ones/)
 
 ## leetcode初级入门专题训练
 
