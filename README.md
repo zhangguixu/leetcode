@@ -36,6 +36,7 @@
 - [414. Third Maximum Number](https://leetcode-cn.com/problems/third-maximum-number/)
 - [448. Find All Numbers Disappeared in an Array](https://leetcode-cn.com/problems/find-all-numbers-disappeared-in-an-array/)
 - [485. Max Consecutive Ones](https://leetcode-cn.com/problems/max-consecutive-ones/)
+- [532. K-diff Pairs in an Array](https://leetcode-cn.com/problems/k-diff-pairs-in-an-array/)
 
 ## leetcode初级入门专题训练
 
