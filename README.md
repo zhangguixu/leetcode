@@ -46,6 +46,7 @@
 - [11. Container With Most Water](https://leetcode-cn.com/problems/container-with-most-water/)
 - [15. 3Sum](https://leetcode-cn.com/problems/3sum/)
 - [16. 3Sum Closest](https://leetcode-cn.com/problems/3sum-closest/)
+- [18. 4Sum](https://leetcode-cn.com/problems/4sum/)
 
 ## leetcode初级入门专题训练
 
