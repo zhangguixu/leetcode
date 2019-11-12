@@ -26,6 +26,8 @@
 
 [leecode tag array](https://leetcode-cn.com/tag/array/)
 
+#### easy
+
 - [27. Remove Element](https://leetcode-cn.com/problems/remove-element/)
 - [35. Search Insert Position](https://leetcode-cn.com/problems/search-insert-position/)
 - [118. Pascal's Triangle](https://leetcode-cn.com/problems/pascals-triangle/)
@@ -38,6 +40,10 @@
 - [485. Max Consecutive Ones](https://leetcode-cn.com/problems/max-consecutive-ones/)
 - [532. K-diff Pairs in an Array](https://leetcode-cn.com/problems/k-diff-pairs-in-an-array/)
 - [561. Array Partition I](https://leetcode-cn.com/problems/array-partition-i/)
+
+#### medium
+
+- [11. Container With Most Water](https://leetcode-cn.com/problems/container-with-most-water/)
 
 ## leetcode初级入门专题训练
 
