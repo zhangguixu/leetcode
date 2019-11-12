@@ -44,6 +44,7 @@
 #### medium
 
 - [11. Container With Most Water](https://leetcode-cn.com/problems/container-with-most-water/)
+- [15. 3Sum](https://leetcode-cn.com/problems/3sum/)
 
 ## leetcode初级入门专题训练
 
