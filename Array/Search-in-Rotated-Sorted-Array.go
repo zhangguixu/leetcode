@@ -7,9 +7,11 @@ func main() {
 	// fmt.Println(search([]int{4,5,6,7,0,1,2}, 3)) // -1
 	// fmt.Println(search([]int{4,5,6,7,0,1,2}, 0)) // 4
 
-	fmt.Println(search_v1([]int{4,5,6,7,0,1,2,3}, 0)) // 4
-	// fmt.Println(search([]int{4,5,6,7,0,1,2}, 3)) // -1
-	// fmt.Println(search([]int{4,5,6,7,0,1,2}, 0)) // 4
+	// fmt.Println(search_v1([]int{4,5,6,7,0,1,2,3}, 0)) // 4
+	// fmt.Println(search_v1([]int{4,5,6,7,0,1,2}, 3)) // -1
+	// fmt.Println(search_v1([]int{4,5,6,7,0,1,2}, 0)) // 4
+	fmt.Println(search_v1([]int{1,3}, 3)) // 1
+
 
 	// fmt.Println(searchPivot([]int{4,5,6,7,0,1,2,3})) // 4
 	// fmt.Println(searchPivot([]int{4,5,6,7,8,0,1,2})) // 5
@@ -114,25 +116,41 @@ func binarySearch(nums []int, target int) int {
 }
 
 /*
-	在题解中，找到一个最简洁的解法
+	在题解中，找到一个最简洁的解法：https://leetcode-cn.com/problems/search-in-rotated-sorted-array/solution/ji-jian-solution-by-lukelee/
 
-	思路是进行一次二分查找
+	思路是进行一次二分查找，
+	
+	核心在于判断目前是否包含旋转，
 
-	nums[0] <= nums[mid]（0 - mid不包含旋转）且nums[0] <= target <= nums[mid] 时 high 向前规约；
-
-	nums[mid] < nums[0]（0 - mid包含旋转），target <= nums[mid] < nums[0] 时向前规约（target 在旋转位置到 mid 之间）
-
-	nums[mid] < nums[0]，nums[mid] < nums[0] <= target 时向前规约（target 在 0 到旋转位置之间）
-
-	其他情况向后规约
-
-	也就是说nums[mid] < nums[0]，nums[0] > target，target > nums[mid] 三项均为真或者只有一项为真时向后规约。
-
-	作者：LukeLee
-	链接：https://leetcode-cn.com/problems/search-in-rotated-sorted-array/solution/ji-jian-solution-by-lukelee/
-	来源：力扣（LeetCode）
-	著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+	nums[m] > nums[0] 表示不包含旋转部分
+	nums[m] < nums[0] 包含旋转部分
 */
 func search_v1(nums []int, target int) int {
-	// TBD
+	l, r := 0, len(nums) - 1
+	for l <= r {
+		m := (l + r) / 2
+		fmt.Println(l, m, r)
+		if nums[m] == target {
+			return m
+		}
+		if nums[m] >= nums[0] && (target > nums[m] || target < nums[0]) || (nums[m] < nums[0] && target < nums[0] && target > nums[m]) {
+			l = m + 1
+		} else {
+			r = m - 1
+		}
+	}
+	return -1
 }
+
+// (nums[0] <= target)， (target < nums[m]) ，(nums[m] < nums[0]) 只需要区别出这三项中有两项为真还是只有一项为真
+// 使用异或，优化上述的if-else
+// func search_v2(nums []int, target int) int {
+
+// }
+
+// func bool2Int(b bool) int {
+// 	if b {
+// 		return 1
+// 	}
+// 	return 0
+// }
