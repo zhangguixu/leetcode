@@ -48,6 +48,7 @@
 - [16. 3Sum Closest](https://leetcode-cn.com/problems/3sum-closest/)
 - [18. 4Sum](https://leetcode-cn.com/problems/4sum/)
 - [31. Next Permutation](https://leetcode-cn.com/problems/next-permutation/)
+- [33. Search in Rotated Sorted Array](https://leetcode-cn.com/problems/search-in-rotated-sorted-array/)
 
 ## leetcode初级入门专题训练
 
