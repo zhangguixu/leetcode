@@ -51,6 +51,14 @@
 - [33. Search in Rotated Sorted Array](https://leetcode-cn.com/problems/search-in-rotated-sorted-array/)
 - [34. Find First and Last Position of Element in Sorted Array](https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
 
+### String
+
+[leetcode tag string](https://leetcode-cn.com/tag/string/)
+
+#### easy
+
+- [13. Roman to Integer](https://leetcode-cn.com/problems/roman-to-integer/)
+
 ## leetcode初级入门专题训练
 
 [初级入门专题练习](https://leetcode.com/explore/featured/card/top-interview-questions-easy/)
