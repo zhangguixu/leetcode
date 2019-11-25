@@ -17,7 +17,6 @@
 
 - [reverse linked list](https://leetcode.com/problems/reverse-linked-list/) 难度：easy，考察点：链表的基础操作
 - [Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/) 难度： easy，todo
-- [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) 难度: easy
 - [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) 难度：easy，考察点：stack
 
 ## leetcode数据结构专题训练
@@ -58,6 +57,7 @@
 #### easy
 
 - [13. Roman to Integer](https://leetcode-cn.com/problems/roman-to-integer/)
+- [14. Longest Common Prefix](https://leetcode-cn.com/problems/longest-common-prefix/)
 
 ## leetcode初级入门专题训练
 
