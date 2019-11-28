@@ -6,9 +6,9 @@ import (
 )
 
 func main() {
-	fmt.Println(longestCommonPrefix_v1([]string{"flower", "flow", "flight"})) // "fl"
-	fmt.Println(longestCommonPrefix_v1([]string{"dog", "racecar", "car"})) // ""
-	fmt.Println(longestCommonPrefix_v1([]string{"testsss", "test", "testaas"})) //  "test"
+	fmt.Println(longestCommonPrefix_v2([]string{"flower", "flow", "flight"})) // "fl"
+	fmt.Println(longestCommonPrefix_v2([]string{"dog", "racecar", "car"})) // ""
+	fmt.Println(longestCommonPrefix_v2([]string{"testsss", "test", "testaas"})) //  "test"
 }
 
 
@@ -71,8 +71,28 @@ func longestCommonPrefix_v1(strs []string) string {
 
 // 分治法
 func longestCommonPrefix_v2(strs []string) string {
+	if len(strs) == 0 {
+		return ""
+	}
+	return findLCP(strs, 0, len(strs) - 1)
 }
 
+func findLCP(strs []string, l, r int) string {
+	if l == r {
+		return strs[l]
+	}
+	m := (l + r) / 2
+	leftPrefix := findLCP(strs, l, m)
+	rightPrefix := findLCP(strs, m + 1, r)
+	var cur string
+	for i := 1; i <= len(leftPrefix) && i <= len(rightPrefix); i++ {
+		if !strings.HasPrefix(rightPrefix, leftPrefix[:i]) {
+			break
+		}
+		cur = leftPrefix[:i]
+	}
+	return cur
+}
 
 // 二分查找法
 
