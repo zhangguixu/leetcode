@@ -58,6 +58,7 @@
 
 - [13. Roman to Integer](https://leetcode-cn.com/problems/roman-to-integer/)
 - [14. Longest Common Prefix](https://leetcode-cn.com/problems/longest-common-prefix/)
+- [38. Count and Say](https://leetcode-cn.com/problems/count-and-say/)
 
 ## leetcode初级入门专题训练
 
@@ -86,7 +87,6 @@
 - [Valid Palindrome](https://leetcode.com/explore/featured/card/top-interview-questions-easy/127/strings/883/)
 - [String to Integer](https://leetcode.com/explore/featured/card/top-interview-questions-easy/127/strings/884/)
 - [*Implement strStr()](https://leetcode.com/explore/featured/card/top-interview-questions-easy/127/strings/885/)
-- [Count and Say](https://leetcode.com/explore/featured/card/top-interview-questions-easy/127/strings/886/)
 
 ### Linked List
 

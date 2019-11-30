@@ -2,12 +2,15 @@ package main
 
 import (
 	"fmt"
-	"strconv"
+	// "strconv"
 )
 
 func main() {
 	fmt.Println(countAndSay(3))
-	fmt.Println(countAndSay(5))
+	fmt.Println(countAndSay(6))
+
+	fmt.Println(countAndSay_v1(3))
+	fmt.Println(countAndSay_v1(6))
 }
 
 /*
@@ -23,27 +26,43 @@ func main() {
 	4  1211
 	5  111221
 */
+// 递归的实现
 func countAndSay(n int) string {
-	return say(n)
-}
-
-func say(n int) string {
-	if n == 1 {
-		return "1"
+  if n == 1 {
+    return "1"
 	}
-	var curStr string
-	preStr := say(n - 1)
-	sayStr := preStr[0]
-	count := 1
-	for i := 1; i < len(preStr); i++ {
-		if sayStr == preStr[i] {
-			count++
-			continue
-		}
-		curStr += strconv.Itoa(count) + string(sayStr)
-		sayStr = preStr[i]
+  preStr := countAndSay(n - 1)
+	curByte, count, curStr := preStr[0], 1, ""
+  for i := 1; i < len(preStr); i++ {
+    if curByte == preStr[i] {
+      count++
+      continue
+    }
+    curStr += fmt.Sprintf("%d%s", count, string(curByte))
+		curByte = preStr[i]
 		count = 1
 	}
-	curStr += strconv.Itoa(count) + string(sayStr)
-	return curStr
+	curStr += fmt.Sprintf("%d%s", count, string(curByte))
+  return curStr
+}
+
+// 递推的实现，注意不断申请局部变量会影响执行速度（从leetcode的执行耗时观察）
+func countAndSay_v1(n int) string {
+	preStr := "1"
+	curByte, count, curStr := preStr[0], 1, ""
+	for i := 2; i <= n; i++ {
+		curByte, count, curStr = preStr[0], 1, ""
+		for j := 1; j < len(preStr); j++ {
+			if curByte == preStr[j] {
+				count++
+				continue
+			}
+			curStr += fmt.Sprintf("%d%s", count, string(curByte))
+			curByte = preStr[j]
+			count = 1
+		}
+		curStr += fmt.Sprintf("%d%s", count, string(curByte))
+		preStr = curStr
+	}
+	return preStr
 }
