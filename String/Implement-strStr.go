@@ -6,8 +6,9 @@ import (
 )
 
 func main() {
-	fmt.Println(strStr("hello", "ll"))
-	fmt.Println(strStr("aaaaa", "bba"))
+	// fmt.Println(strStr("hello", "ll"))
+	// fmt.Println(strStr("aaaaa", "bba"))
+	fmt.Println(computeNext("ABCDABD"))
 }
 
 // API
@@ -21,72 +22,63 @@ func strStr_1(haystack string, needle string) int {
 	* 如果当前字符匹配成功（即S[i] == P[j]），则i++，j++，继续匹配下一个字符；
 	* 如果失配（即S[i]! = P[j]），令i = i - (j - 1)，j = 0。相当于每次匹配失败时，i 回溯，j 被置为0。
 */
-func strStr_2(haystack string, needle string) int {
-	i := 0
-	j := 0
-	for i < len(haystack) && j < len(needle) {
-		if haystack[i] == needle[j] {
-			i++
-			j++
-		} else {
-			i = i - j + 1
-			j = 0
-		}
-	}
-
-	if j < len(needle) {
-		return -1
-	}
-	return i - j
+func strStr(haystack string, needle string) int {
+  var i, k, j int
+  for i = 0; i <= len(haystack) - len(needle); i++ {
+    k = i
+    for j = 0; j < len(needle); j++ {
+      if haystack[k] != needle[j] {
+        break
+      } 
+      k++
+    }
+    if k - i == len(needle) {
+      return i
+    }
+  }
+  return -1
 }
 
 /*
-	KMP算法
-	基于暴力破解中的i的回退的改进，在i进行回退的时候，保证让i回退到有效的位置，减少匹配的次数
-	设法利用这个已知信息，不要把"搜索位置"移回已经比较过的位置，继续把它向后移，这样就提高了效率。
+	KMP算法：目前讲的最好就是https://blog.csdn.net/v_july_v/article/details/7041827，注意一些细节
 
-	KMP算法通过计算部分匹配值来实现有效回退
-	"部分匹配值"就是"前缀"和"后缀"的最长的共有元素的长度
+	需要注意的细节
 
-	例如：
-	"ABCDA"的前缀为[A, AB, ABC, ABCD]，后缀为[BCDA, CDA, DA, A]，共有元素为"A"，长度为1;
+	- 移动的下标是j
+	- next数组表示是失配的时候，j移动下一个位置
+	- next数组是PMT表整体右移一位，然后初值赋为-1
+	- PMT（Partial Match Table) 前缀后缀最长公共元素长度
+	- 求next数组的计算过程中，需要用到模式串的自我匹配，这个是理解next数组，理解整个KMP的关键，注意这里的下标
 
-	首先有一个存储，来存储计算的子字符串的部分匹配值的长度
+	到这里就很好理解，求next[j]，其实就是计算P[0...,j -1]的前缀后缀最长的公共元素长度
 
-	还有一个函数，来计算部分匹配值
+	这里采用的是递推的方式来计算next数据
 
-	之后改造一下暴力破解的函数即可
+	next[j] = k: 意味着：p[0, k - 1] = p[j - k, j - 1] 
 
-	TBD：
+	已知next[j] = k，求next[j + 1]
+
+	若p[k] == p[j]，那么，next[j + 1] = next[j] + 1 
+	若p[k] != p[j]，那就等于
+	p[0, k] 与 p[j - k, j]在p[k]的时候失配了，因为next[k]已经是计算出来了，在失配的时候（请将其视为两个字符串在匹配，p[j -k, j] 是字符串，而p[0,k]是模式串）
+	这里很玄妙，也是我觉得KMP算法最难理解的地方，跟一开始所要进行字符的模式匹配是类似的问题，而且这个时候next[k]是已知的，而且我们仅需要找到一个p[next[k]] == p[j]即可，不需要模式串的完全匹配
+
+	后面会在总结一篇文章
 */
-func strStr(haystack string, needle string) int {
-	cache := make(map[int]int, 0) // 字符串的长度: 对应的部分匹配值+1，这里和默认值0区分开来，0需要走一次计算 1表示已经计算过了，但是匹配值是0
-
-	computePartialMatch := func(s string) int {
-		if len(s) == 1 {
-			return 0
-		}
-		if cache[len(s)] > 0 {
-			return cache[len(s)] - 1
-		}
-
-	}
-
-	i := 0
-	j := 0
-	for i < len(haystack) && j < len(needle) {
-		if haystack[i] == needle[j] {
-			i++
-			j++
-		} else {
-			i = i + 1 - computePartialMatch(string(needle[:j]))
-			j = 0
+//KMP算法：计算next数组
+func computeNext(str string) []int {
+	next := make([]int, len(str), len(str))
+	next[0] = -1
+	var k int
+	for i := 1; i < len(str); i++ {
+		k = next[i - 1]
+		for {
+			if k == -1 || str[i - 1] == str[k] {
+				next[i] = k + 1
+				break
+			}
+			k = next[k]
 		}
 	}
-
-	if j < len(needle) {
-		return -1
-	}
-
-	return i - j
+	return next
 }
