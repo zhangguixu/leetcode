@@ -59,6 +59,7 @@
 - [13. Roman to Integer](https://leetcode-cn.com/problems/roman-to-integer/)
 - [14. Longest Common Prefix](https://leetcode-cn.com/problems/longest-common-prefix/)
 - [38. Count and Say](https://leetcode-cn.com/problems/count-and-say/)
+- [58. Length of Last Word](https://leetcode-cn.com/problems/length-of-last-word/)
 
 ## leetcode初级入门专题训练
 
