@@ -60,6 +60,7 @@
 - [14. Longest Common Prefix](https://leetcode-cn.com/problems/longest-common-prefix/)
 - [38. Count and Say](https://leetcode-cn.com/problems/count-and-say/)
 - [58. Length of Last Word](https://leetcode-cn.com/problems/length-of-last-word/)
+- [67. Add Binary](https://leetcode-cn.com/problems/add-binary/)
 
 ## leetcode初级入门专题训练
 
