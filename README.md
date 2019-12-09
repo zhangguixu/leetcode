@@ -62,6 +62,7 @@
 - [58. Length of Last Word](https://leetcode-cn.com/problems/length-of-last-word/)
 - [67. Add Binary](https://leetcode-cn.com/problems/add-binary/)
 - [125. Valid Palindrome](https://leetcode-cn.com/problems/valid-palindrome/)
+- [344. Reverse String](https://leetcode-cn.com/problems/reverse-string/)
 
 ## leetcode初级入门专题训练
 
@@ -83,7 +84,6 @@
 
 ### Strings
 
-- [Reverse String](https://leetcode.com/explore/featured/card/top-interview-questions-easy/127/strings/879/)
 - [Reverse Integer](https://leetcode.com/explore/featured/card/top-interview-questions-easy/127/strings/880/)
 - [First Unique Character in a String](https://leetcode.com/explore/featured/card/top-interview-questions-easy/127/strings/881/)
 - [Valid Anagram](https://leetcode.com/explore/featured/card/top-interview-questions-easy/127/strings/882/)
