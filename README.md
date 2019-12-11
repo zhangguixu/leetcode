@@ -64,6 +64,14 @@
 - [125. Valid Palindrome](https://leetcode-cn.com/problems/valid-palindrome/)
 - [344. Reverse String](https://leetcode-cn.com/problems/reverse-string/)
 
+### Linked List
+
+[leetcode tag linked list](https://leetcode-cn.com/tag/linked-list/)
+
+#### easy
+
+-[21. Merge Two Sorted Lists](https://leetcode-cn.com/problems/merge-two-sorted-lists/)
+
 ## leetcode初级入门专题训练
 
 [初级入门专题练习](https://leetcode.com/explore/featured/card/top-interview-questions-easy/)
@@ -93,7 +101,6 @@
 
 ### Linked List
 
-- [Merge Two Sorted Lists](https://leetcode.com/explore/featured/card/top-interview-questions-easy/93/linked-list/771/)
 - [Palindrome Linked List](https://leetcode.com/explore/featured/card/top-interview-questions-easy/93/linked-list/772/)
 - [Linked List Cycle](https://leetcode.com/explore/featured/card/top-interview-questions-easy/93/linked-list/773/)
 - [Remove Nth Node From End of List](https://leetcode.com/explore/featured/card/top-interview-questions-easy/127/strings/886/)

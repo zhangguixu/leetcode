@@ -34,45 +34,61 @@ func main() {
 	print(mergeTwoLists(nil, create([]int{1, 3, 4})))
 }
 
+// 这个版本的代码相当不简洁
 func mergeTwoLists(l1 *ListNode, l2 *ListNode) *ListNode {
-	var header, tail *ListNode
-	if l1 == nil && l2 == nil {
-		return nil
-	}
-	if l1 == nil && l2 != nil {
-		return l2
-	}
-	if l1 != nil && l2 == nil {
-		return l1
-	}
-	for l1 != nil && l2 != nil {
-		var next *ListNode
-		if l1.Val <= l2.Val {
-			next = l1
-			l1 = l1.Next
-		} else {
-			next = l2
-			l2 = l2.Next
-		}
-		if header == nil {
-			header = next
-		}
-		if tail == nil {
-			tail = next
-		} else {
-			tail.Next = next
-			tail = tail.Next
-		}
-	}
-	for l1 != nil {
-		tail.Next = l1
-		tail = tail.Next
-		l1 = l1.Next
-	}
-	for l2 != nil {
-		tail.Next = l2
-		tail = tail.Next
-		l2 = l2.Next
-	}
-	return header
+  if l1 == nil {
+    return l2
+  }
+  if l2 == nil {
+    return l1
+  }
+  var head, tail *ListNode
+  if l1.Val <= l2.Val {
+    head = l1
+    l1 = l1.Next
+  } else {
+    head = l2
+    l2 = l2.Next
+  }
+  tail = head
+  for l1 != nil && l2 != nil {
+    if l1.Val <= l2.Val {
+      tail.Next = l1
+      l1 = l1.Next
+    } else {
+      tail.Next = l2
+      l2 = l2.Next
+    }
+    tail = tail.Next
+  }
+  if l1 != nil {
+    tail.Next = l1
+  }
+  if l2 != nil {
+    tail.Next = l2
+  }
+  return head
+}
+
+// 使用(dump node)哑节点简化代码实现
+func mergeTwoLists_v1(l1 *ListNode, l2 *ListNode) *ListNode {
+	head := new(ListNode)
+	tail := head
+  for l1 != nil && l2 != nil {
+    if l1.Val <= l2.Val {
+      tail.Next = l1
+      l1 = l1.Next
+    } else {
+      tail.Next = l2
+      l2 = l2.Next
+    }
+    tail = tail.Next
+  }
+  if l1 != nil {
+    tail.Next = l1
+  }
+  if l2 != nil {
+    tail.Next = l2
+  }
+  return head.Next
 }
