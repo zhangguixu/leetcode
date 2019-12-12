@@ -71,6 +71,7 @@
 #### easy
 
 -[21. Merge Two Sorted Lists](https://leetcode-cn.com/problems/merge-two-sorted-lists/)
+-[83. Remove Duplicates from Sorted List](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/)
 
 ## leetcode初级入门专题训练
 
