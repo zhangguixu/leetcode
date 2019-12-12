@@ -72,6 +72,7 @@
 
 -[21. Merge Two Sorted Lists](https://leetcode-cn.com/problems/merge-two-sorted-lists/)
 -[83. Remove Duplicates from Sorted List](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/)
+-[141. Linked List Cycle](https://leetcode-cn.com/problems/linked-list-cycle/)
 
 ## leetcode初级入门专题训练
 
@@ -103,7 +104,6 @@
 ### Linked List
 
 - [Palindrome Linked List](https://leetcode.com/explore/featured/card/top-interview-questions-easy/93/linked-list/772/)
-- [Linked List Cycle](https://leetcode.com/explore/featured/card/top-interview-questions-easy/93/linked-list/773/)
 - [Remove Nth Node From End of List](https://leetcode.com/explore/featured/card/top-interview-questions-easy/127/strings/886/)
 
 ### Tree
