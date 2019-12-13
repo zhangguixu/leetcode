@@ -73,6 +73,7 @@
 -[21. Merge Two Sorted Lists](https://leetcode-cn.com/problems/merge-two-sorted-lists/)
 -[83. Remove Duplicates from Sorted List](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/)
 -[141. Linked List Cycle](https://leetcode-cn.com/problems/linked-list-cycle/)
+-[160. Intersection of Two Linked Lists](https://leetcode-cn.com/problems/intersection-of-two-linked-lists/)
 
 ## leetcode初级入门专题训练
 
