@@ -11,7 +11,6 @@
 - [冒泡排序](./commonsort/bubble-sort.go)
 - [选择排序](./commonsort/selection-sort.go)
 - [归并排序](./commonsort/merge-sort.go)
-- [快速排序](./commonsort/quick-sort.go)
 
 ## leetcode刷题记录
 
@@ -49,6 +48,7 @@
 - [31. Next Permutation](https://leetcode-cn.com/problems/next-permutation/)
 - [33. Search in Rotated Sorted Array](https://leetcode-cn.com/problems/search-in-rotated-sorted-array/)
 - [34. Find First and Last Position of Element in Sorted Array](https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
+- [912. Sort an Array](https://leetcode-cn.com/problems/sort-an-array/solution/)
 
 ### String
 
@@ -70,11 +70,11 @@
 
 #### easy
 
--[21. Merge Two Sorted Lists](https://leetcode-cn.com/problems/merge-two-sorted-lists/)
--[83. Remove Duplicates from Sorted List](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/)
--[141. Linked List Cycle](https://leetcode-cn.com/problems/linked-list-cycle/)
--[160. Intersection of Two Linked Lists](https://leetcode-cn.com/problems/intersection-of-two-linked-lists/)
--[203. s](https://leetcode-cn.com/problems/remove-linked-list-elements/)
+- [21. Merge Two Sorted Lists](https://leetcode-cn.com/problems/merge-two-sorted-lists/)
+- [83. Remove Duplicates from Sorted List](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/)
+- [141. Linked List Cycle](https://leetcode-cn.com/problems/linked-list-cycle/)
+- [160. Intersection of Two Linked Lists](https://leetcode-cn.com/problems/intersection-of-two-linked-lists/)
+- [203. s](https://leetcode-cn.com/problems/remove-linked-list-elements/)
 
 ## leetcode初级入门专题训练
 

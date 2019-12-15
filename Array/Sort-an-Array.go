@@ -1,4 +1,17 @@
-package commonsort
+package main
+
+import "fmt"
+
+func main() {
+	nums := []int{2,1,3,5,5}
+	quickSort(nums)
+	fmt.Println(nums)
+}
+
+/*
+	排序算法练习
+*/
+
 
 /*
 	快排的思路
@@ -22,42 +35,38 @@ package commonsort
 	2）当数列中包含大量的重复元素的时候，这一版的代码也会造成"分割不等“的问题，此时需要将重复元素均匀的分散的自数列旁
 	3）使用三路快排
 */
-
-func QuickSort(nums []int) []int {
-	quickSort(nums, 0, len(nums)-1)
-	return nums
-}
-
-func quickSort(nums []int, l int, r int) {
-	if l >= r {
+func quickSort(nums []int) {
+	if len(nums) == 0 {
 		return
 	}
-	p := partition(nums, l, r)
-	quickSort(nums, l, p-1)
-	quickSort(nums, p+1, r)
+	quickSortHelper(nums, 0, len(nums) - 1)
 }
 
-func partition(nums []int, l int, r int) int {
-	// 选择基准值
-	m := nums[l]
-	s := l
-	l++
+func quickSortHelper(nums []int, l, h int) {
+	if (l >= h) {
+		return 
+	}
+	p := partition(nums, l, h)
+	quickSortHelper(nums, l, p - 1)
+	quickSortHelper(nums, p + 1, h)
+}
 
-	for l <= r {
-		// 注意这里的下表判断应该优先，不然会有越界的问题
-		for l <= r && nums[l] <= m {
-			l++
+func partition(nums []int, l, h int) int {
+	v, i, j := nums[l], l + 1, h
+	for i <= j {
+		for i <= j && nums[i] <= v {
+			i++
 		}
-		for l <= r && nums[r] > m {
-			r--
+		for i <= j && nums[j] >= v {
+			j--
 		}
-		if l < r {
-			nums[l], nums[r] = nums[r], nums[l]
-			l++
+		if i <= j {
+			nums[i], nums[j] = nums[j], nums[i]
+			i++
+			j--
 		}
 	}
-
-	nums[r], nums[s] = nums[s], nums[r]
-
-	return r
+	nums[l], nums[j] = nums[j], nums[l]
+	return j
 }
+
