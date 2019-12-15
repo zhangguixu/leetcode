@@ -8,9 +8,7 @@
 
 ## 排序
 
-- [冒泡排序](./commonsort/bubble-sort.go)
 - [选择排序](./commonsort/selection-sort.go)
-- [归并排序](./commonsort/merge-sort.go)
 
 ## leetcode刷题记录
 

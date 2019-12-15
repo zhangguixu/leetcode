@@ -4,9 +4,7 @@ import "fmt"
 
 func main() {
 	nums := []int{2,1,3,5,5}
-	// fmt.Println(testQuickSort(nums))s
-	nums = []int{2,1,3,5,5}
-	fmt.Println(testMergeSort(nums))
+	fmt.Println(testBubbleSort(nums))
 }
 
 /*
@@ -111,5 +109,43 @@ func merge(nums []int, l, m, h int) {
 		nums[idx] = first[i]
 		idx++
 		i++
+	}
+}
+
+/*
+	冒泡排序的算法步骤
+
+	1）比较相邻的元素。如果第一个比第二个大，就交换他们两个。
+	2）对每一对相邻元素作同样的工作，从开始第一对到结尾的最后一对。这步做完后，最后的元素会是最大的数。
+	3）针对所有的元素重复以上的步骤，除了最后一个。
+	4）持续每次对越来越少的元素重复上面的步骤，直到没有任何一对数字需要比较。
+
+	不稳定排序，最好情况 O(n)，最差情况 O(n * n)
+
+	每一次都确定一个最大的数，放在数组的后面
+
+	关键词：相邻元素比较，然后每次内循环确认一个元素的次序，在数组的最后面
+
+	冒泡排序在leetcode上测试不了，会超时
+*/
+func testBubbleSort(nums []int) []int {
+	bubbleSort(nums)
+	return nums
+}
+
+func bubbleSort(nums []int) {
+	length, j, limit, changed := len(nums), 0, 0, false
+	for i := 0; i < length; i++ {
+		changed = false
+		limit = length - i
+		for j = 1; j < limit; j++ {
+			if nums[j] < nums[j - 1] {
+				nums[j], nums[j - 1] = nums[j - 1], nums[j]
+				changed = true
+			}
+		}
+		if !changed {
+			break
+		}
 	}
 }
