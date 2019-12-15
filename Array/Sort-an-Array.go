@@ -4,8 +4,9 @@ import "fmt"
 
 func main() {
 	nums := []int{2,1,3,5,5}
-	quickSort(nums)
-	fmt.Println(nums)
+	// fmt.Println(testQuickSort(nums))s
+	nums = []int{2,1,3,5,5}
+	fmt.Println(testMergeSort(nums))
 }
 
 /*
@@ -35,20 +36,18 @@ func main() {
 	2）当数列中包含大量的重复元素的时候，这一版的代码也会造成"分割不等“的问题，此时需要将重复元素均匀的分散的自数列旁
 	3）使用三路快排
 */
-func quickSort(nums []int) {
-	if len(nums) == 0 {
-		return
-	}
-	quickSortHelper(nums, 0, len(nums) - 1)
+func testQuickSort(nums []int) []int {
+	quickSort(nums, 0, len(nums) - 1)
+	return nums
 }
 
-func quickSortHelper(nums []int, l, h int) {
+func quickSort(nums []int, l, h int) {
 	if (l >= h) {
 		return 
 	}
 	p := partition(nums, l, h)
-	quickSortHelper(nums, l, p - 1)
-	quickSortHelper(nums, p + 1, h)
+	quickSort(nums, l, p - 1)
+	quickSort(nums, p + 1, h)
 }
 
 func partition(nums []int, l, h int) int {
@@ -70,3 +69,47 @@ func partition(nums []int, l, h int) int {
 	return j
 }
 
+/*
+	归并排序
+	将数组拆成子数组，然后对子数组进行排序，最后将各个有序的子数组合并
+
+	尽可能的利用原来数组的空间
+*/
+func testMergeSort(nums []int) []int {
+	mergeSort(nums, 0, len(nums) - 1)
+	return nums
+}
+
+func mergeSort(nums []int, l, h int) {
+	if l >= h {
+		return
+	}
+	m := (l + h) / 2
+	mergeSort(nums, l, m)
+	mergeSort(nums, m + 1, h)
+	merge(nums, l, m, h)
+}
+
+// 归并排序合并操作
+func merge(nums []int, l, m, h int) {
+	// 需要额外的空间
+	first := make([]int, 0, m + 1 - l + 1)
+	first = append(first, nums[l:m + 1]...)
+	total :=  m + 1 - l
+	idx, i, j := l, 0, m + 1
+	for i < total && j <= h {
+		if first[i] < nums[j] {
+			nums[idx] = first[i]
+			i++
+		} else {
+			nums[idx] = nums[j]
+			j++
+		}
+		idx++
+	}
+	for i < total {
+		nums[idx] = first[i]
+		idx++
+		i++
+	}
+}
