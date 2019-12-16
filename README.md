@@ -6,17 +6,7 @@
 - [栈](./datastructure/stack.go)
 - [二叉树](./datastructure/binary-tree.go)
 
-## 排序
-
-- [选择排序](./commonsort/selection-sort.go)
-
-## leetcode刷题记录
-
-- [reverse linked list](https://leetcode.com/problems/reverse-linked-list/) 难度：easy，考察点：链表的基础操作
-- [Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/) 难度： easy，todo
-- [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) 难度：easy，考察点：stack
-
-## leetcode数据结构专题训练
+## leetcode tags专题训练
 
 ### Array 
 
@@ -72,7 +62,8 @@
 - [83. Remove Duplicates from Sorted List](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/)
 - [141. Linked List Cycle](https://leetcode-cn.com/problems/linked-list-cycle/)
 - [160. Intersection of Two Linked Lists](https://leetcode-cn.com/problems/intersection-of-two-linked-lists/)
-- [203. s](https://leetcode-cn.com/problems/remove-linked-list-elements/)
+- [203. Remove Linked List Elements](https://leetcode-cn.com/problems/remove-linked-list-elements/)
+- [206. Reverse Linked List](https://leetcode-cn.com/problems/reverse-linked-list/)
 
 ## leetcode初级入门专题训练
 
