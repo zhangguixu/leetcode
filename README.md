@@ -64,6 +64,7 @@
 - [160. Intersection of Two Linked Lists](https://leetcode-cn.com/problems/intersection-of-two-linked-lists/)
 - [203. Remove Linked List Elements](https://leetcode-cn.com/problems/remove-linked-list-elements/)
 - [206. Reverse Linked List](https://leetcode-cn.com/problems/reverse-linked-list/)
+- [234. Palindrome Linked List](https://leetcode-cn.com/problems/palindrome-linked-list/)
 
 ## leetcode初级入门专题训练
 
@@ -94,7 +95,6 @@
 
 ### Linked List
 
-- [Palindrome Linked List](https://leetcode.com/explore/featured/card/top-interview-questions-easy/93/linked-list/772/)
 - [Remove Nth Node From End of List](https://leetcode.com/explore/featured/card/top-interview-questions-easy/127/strings/886/)
 
 ### Tree
