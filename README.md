@@ -66,6 +66,7 @@
 - [206. Reverse Linked List](https://leetcode-cn.com/problems/reverse-linked-list/)
 - [234. Palindrome Linked List](https://leetcode-cn.com/problems/palindrome-linked-list/)
 - [237. Delete Node in a Linked List](https://leetcode-cn.com/problems/delete-node-in-a-linked-list/)
+- [876. Middle of the Linked List](https://leetcode-cn.com/problems/middle-of-the-linked-list/)
 
 ## leetcode初级入门专题训练
 
