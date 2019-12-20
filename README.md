@@ -69,6 +69,10 @@
 - [876. Middle of the Linked List](https://leetcode-cn.com/problems/middle-of-the-linked-list/)
 - [1290. Convert Binary Number in a Linked List to Integer](https://leetcode-cn.com/problems/convert-binary-number-in-a-linked-list-to-integer/)
 
+#### medium
+
+- [2. Add Two Numbers](https://leetcode-cn.com/problems/add-two-numbers/)
+
 ## leetcode初级入门专题训练
 
 [初级入门专题练习](https://leetcode.com/explore/featured/card/top-interview-questions-easy/)
