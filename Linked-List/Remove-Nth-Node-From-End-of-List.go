@@ -37,86 +37,28 @@ func main() {
 }
 
 /*
-	题目简单，但是情况要想周全
-	 1->2->3->4->5, and n = 2.
-	 1->2->3->5
-
-	 1->2 and n = 2
-	 
-	 这个解法太丑陋的了，增加一个亚节点(dump node)可以减少一次if的判断
-*/
-func removeNthFromEndUgly(head *ListNode, n int) *ListNode {
-	cur := head
-	count := 0
-	for cur != nil {
-		count++
-		cur = cur.Next
-	}
-	count = count - n
-	if count == 0 {
-		head = head.Next
-	} else {
-		cur = head
-		for count > 1 {
-			count--
-			cur = cur.Next
-		}
-		if cur.Next != nil {
-			cur.Next = cur.Next.Next
-		}
-	}
-	return head
-}
-
-// dump node的应用，可以减少很多不必要的判断！！
-func removeNthFromEndByDumpNode(head *ListNode, n int) *ListNode {
-	dummy := new(ListNode)
-	dummy.Next = head
-
-	cur := head
-	count := 0
-	for cur != nil {
-		count++
-		cur = cur.Next
-	}
-	cur = dummy
-	count -= n
-	for count > 0 {
-		count--
-		cur = cur.Next
-	}
-	cur.Next = cur.Next.Next
-	return dummy.Next
-}
-
-/*
-	上面的解法需要两次循环，可以使用一次循环也可以
-	技巧是使用两个指针
-
-	fast 先前进n个节点
-	之后
-	slow和fast再一起前进，当fast到达链表末端的时候，这个slow和fast就相隔n个节点
-	slow所在的位置就是待删除节点的上一个节点
-*/
-func removeNthFromEndByOnePass(head *ListNode, n int) *ListNode {
-
-	dummy := new(ListNode)
-	dummy.Next = head
-
-	fast := dummy
-	slow := dummy
-
-	for i := 1; i <= n + 1; i++ {
-		fast = fast.Next
-	}
-
-	for fast != nil {
-		fast = fast.Next
-		slow = slow.Next
-	}
+	需要注意的边界是删除表头的情况，按照套路就是运用 dump node
 	
-	slow.Next = slow.Next.Next
+	dump node： 涉及表头边界逻辑一般都可以运用，简化代码逻辑分支
+	快慢指针（其实就是双指针，跟数组的双指针有点像）
+		中间节点
+		从链表尾部的。。
+		是否有环
 
-	return dummy.Next
+	比较常规的套路题
+*/
+func removeNthFromEnd(head *ListNode, n int) *ListNode {
+  dumpNode := &ListNode{Next: head}
+  slow, fast := dumpNode, dumpNode
+  for n > 0 {
+    fast = fast.Next
+    n--
+  }
+  for fast.Next != nil {
+    slow = slow.Next
+    fast = fast.Next
+  }
+  slow.Next = slow.Next.Next
+  return dumpNode.Next
 }
 

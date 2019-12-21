@@ -72,6 +72,7 @@
 #### medium
 
 - [2. Add Two Numbers](https://leetcode-cn.com/problems/add-two-numbers/)
+- [19. Remove Nth Node From End of List](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/)
 
 ## leetcode初级入门专题训练
 
@@ -99,10 +100,6 @@
 - [Valid Palindrome](https://leetcode.com/explore/featured/card/top-interview-questions-easy/127/strings/883/)
 - [String to Integer](https://leetcode.com/explore/featured/card/top-interview-questions-easy/127/strings/884/)
 - [*Implement strStr()](https://leetcode.com/explore/featured/card/top-interview-questions-easy/127/strings/885/)
-
-### Linked List
-
-- [Remove Nth Node From End of List](https://leetcode.com/explore/featured/card/top-interview-questions-easy/127/strings/886/)
 
 ### Tree
 
