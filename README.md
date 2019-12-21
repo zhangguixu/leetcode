@@ -73,6 +73,7 @@
 
 - [2. Add Two Numbers](https://leetcode-cn.com/problems/add-two-numbers/)
 - [19. Remove Nth Node From End of List](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/)
+- [24. Swap Nodes in Pairs](https://leetcode-cn.com/problems/swap-nodes-in-pairs/)
 
 ## leetcode初级入门专题训练
 
