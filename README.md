@@ -75,6 +75,7 @@
 - [19. Remove Nth Node From End of List](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/)
 - [24. Swap Nodes in Pairs](https://leetcode-cn.com/problems/swap-nodes-in-pairs/)
 - [61. Rotate List](https://leetcode-cn.com/problems/rotate-list/)
+- [82. Remove Duplicates from Sorted List II](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list-ii/)
 
 ## leetcode初级入门专题训练
 
