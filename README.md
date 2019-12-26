@@ -77,6 +77,7 @@
 - [61. Rotate List](https://leetcode-cn.com/problems/rotate-list/)
 - [82. Remove Duplicates from Sorted List II](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list-ii/)
 - [86. Partition List](https://leetcode-cn.com/problems/partition-list/)
+- [92. Reverse Linked List II](https://leetcode-cn.com/problems/reverse-linked-list-ii/)
 
 ## leetcode初级入门专题训练
 
