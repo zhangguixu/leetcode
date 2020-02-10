@@ -86,6 +86,7 @@
 #### easy
 
 [100. Same Tree](https://leetcode-cn.com/problems/same-tree/)
+[101. Symmetric Tree](https://leetcode-cn.com/problems/symmetric-tree/)
 
 ## leetcode初级入门专题训练
 
