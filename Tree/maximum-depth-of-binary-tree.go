@@ -28,27 +28,15 @@ func main() {
 	递归的思想
 */
 func maxDepth(root *TreeNode) int {
-	if root == nil {
-		return 0
-	}
-	return depth(root)
+  if root == nil {
+    return 0
+  }
+  return 1 + max(maxDepth(root.Left), maxDepth(root.Right))
 }
 
-func max(i int, j int) int {
-	if i > j {
-		return i
-	}
-	return j
-}
-
-func depth(t *TreeNode) int {
-	lDepth := 0
-	rDepth := 0
-	if t.Left != nil {
-		lDepth = depth(t.Left)
-	}
-	if t.Right != nil {
-		rDepth = depth(t.Right)
-	}
-	return 1 + max(lDepth, rDepth)
+func max(a, b int) int {
+  if a > b {
+    return a
+  }
+  return b
 }
