@@ -1,47 +1,6 @@
 package main
 
-import (
-	"fmt"
-)
-
-type TreeNode struct {
-	Val   int
-	Left  *TreeNode
-	Right *TreeNode
-}
-
-// func create(list []interface{}) *TreeNode {
-// 	if len(list) == 0 {
-// 		return nil
-// 	}
-// 	tnList := make([]*TreeNode, 0, 10)
-// 	root := new(TreeNode)
-// 	root.Val = list[0]
-// 	tnList = append(tnList, root)
-// 	index := 1
-// 	for i := 0; i < len(tnList) && index < len(list); i++ {
-// 		parent := tnList[i]
-// 		n
-// 		if index < len(list) {
-// 			parent.Left = new(TreeNode)
-// 			parent.Left.Val = list[index]
-// 			tnList = append(tnList, parent.Left)
-// 			index++
-// 		}
-// 		if index < len(list) {
-// 			parent.Right = new(TreeNode)
-// 			parent.Right.Val = list[index]
-// 			tnList = append(tnList, parent.Right)
-// 			index++
-// 		}
-// 	}
-// 	return root
-// }
-
-func main() {
-	fmt.Println()
-}
-
+// 使用两个数组交替存储当前层级和下一层级
 func levelOrder(root *TreeNode) [][]int {
 	nextQueue := make([]*TreeNode, 0, 10)
 	if root != nil {
@@ -66,33 +25,30 @@ func levelOrder(root *TreeNode) [][]int {
 	return result
 }
 
-func levelOrder2(root *TreeNode) [][]int {
-	queue := make([]*TreeNode, 0, 10)
-	var curIndex, curLevelNodeNum, nextLevelNodeNum int
-	if root != nil {
-		queue = append(queue, root)
-		nextLevelNodeNum = 1
-	}
-	result := make([][]int, 0, 10)
-	for nextLevelNodeNum > 0 {
-		list := make([]int, 0, 10)
-		curLevelNodeNum = nextLevelNodeNum
-		nextLevelNodeNum = 0
-		for curLevelNodeNum > 0 {
-			tn := queue[curIndex]
-			list = append(list, tn.Val)
-			if tn.Left != nil {
-				queue = append(queue, tn.Left)
-				nextLevelNodeNum++
-			}
-			if tn.Right != nil {
-				queue = append(queue, tn.Right)
-				nextLevelNodeNum++
-			}
-			curIndex++
-			curLevelNodeNum--
-		}
-		result = append(result, list)
-	}
-	return result
+// 使用一个数组存储所有的节点
+func levelOrder(root *TreeNode) [][]int {
+  result := make([][]int, 0)
+  nodes := make([]*TreeNode, 0)
+  if root != nil {
+    nodes = append(nodes, root)
+  }
+  i, boundary := 0, len(nodes)
+  var n *TreeNode
+  for i < boundary {
+    list := make([]int, 0)
+    for i < boundary {
+      n = nodes[i]
+      list = append(list, n.Val)
+      if n.Left != nil {
+        nodes = append(nodes, n.Left)
+      }
+      if n.Right != nil {
+        nodes = append(nodes, n.Right)
+      }
+      i++
+    }
+    result = append(result, list)
+    boundary = len(nodes)
+  }
+  return result
 }

@@ -88,6 +88,11 @@
 [100. Same Tree](https://leetcode-cn.com/problems/same-tree/)
 [101. Symmetric Tree](https://leetcode-cn.com/problems/symmetric-tree/)
 [104. Maximum Depth of Binary Tree](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/)
+[107. Binary Tree Level Order Traversal II](https://leetcode-cn.com/problems/binary-tree-level-order-traversal-ii/)
+
+#### medium
+
+[102. Binary Tree Level Order Traversal](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/)
 
 ## leetcode初级入门专题训练
 
@@ -120,7 +125,6 @@
 
 - [Binary Tree Level Order Traversal](https://leetcode.com/explore/featured/card/top-interview-questions-easy/94/trees/628/)
 - [Validate Binary Search Tree](https://leetcode.com/explore/featured/card/top-interview-questions-easy/94/trees/625/)
-- [Symmetric Tree](https://leetcode.com/explore/featured/card/top-interview-questions-easy/94/trees/627/)
 - [Convert Sorted Array to Binary Search Tree](https://leetcode.com/explore/featured/card/top-interview-questions-easy/94/trees/631/)
 
 ### Sorting and Searching
